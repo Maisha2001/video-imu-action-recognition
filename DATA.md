@@ -29,3 +29,9 @@ Select C from 0.1, 1, and 10 on validation macro-F1, then refit on 1, 3, 5, 7.
 Report accuracy, macro-F1, confusion counts, per-class and per-subject results.
 Do not tune against the test results. CI uses generated test fixtures and does
 not download the dataset; fixture scores are not benchmark results.
+
+The neural path decodes all RGB clips before uniformly sampling 16 frames. The
+checked release contains 32–96 decoded frames per clip at 15 FPS. It interpolates
+each IMU trial to 128 relative positions. Whole-trial sampling uses the end of
+the recording, so these results do not measure early or streaming prediction.
+See [MODELING.md](MODELING.md) for neural selection and refitting details.

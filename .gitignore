@@ -8,3 +8,5 @@ runs/
 *.zip
 *.mat
 *.avi
+*.pt
+*.npy
