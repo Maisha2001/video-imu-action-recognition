@@ -26,3 +26,4 @@ jobs:
       - run: python -m pip install -r requirements-deep.txt
       - run: python -m pytest -q
       - run: python multimodal.py --help
+      - run: python attention.py --help

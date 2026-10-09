@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-10-09T01:00:03.711602+00:00",
+  "run": "attention-42",
+  "trial": "a1_s2_t1",
+  "inputs_sha256": {
+    "a1_s2_t1_color.avi": "ad2e44b9a2d43648bedcff0ef928ab0bb4a954707fc50a89fede6148a82cca4b",
+    "a1_s2_t1_inertial.mat": "fb5c963f4198f75adaf6080b03c8afefea6f2a2f5b87db2f38caa647c4f8d5d4"
+  },
+  "model_sha256": "5cfddf65aa06d57cca699f2e56d5fe9233827813052a950414ae0090f6e14e07",
+  "device": "cpu",
+  "actual": 1,
+  "predicted": 1,
+  "matches_recorded_action": true,
+  "maximum_probability_difference": 1.1920928955078125e-07,
+  "attention_matrices": 2,
+  "attention_shape": [
+    16,
+    16
+  ],
+  "attention_rows_sum_to_one": true,
+  "invocation_seconds": 7.620323700000881
+}

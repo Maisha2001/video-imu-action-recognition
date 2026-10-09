@@ -1,0 +1,63 @@
+{
+  "checked_at_utc": "2026-10-09T00:59:11.223006+00:00",
+  "device": "cpu",
+  "torch": "2.11.0+cu128",
+  "cuda_tf32": false,
+  "verification_source_sha256": "9a9419847d909de67083c907a4fcca967e3cc710ec0044633de9d1c26c0da83c",
+  "checks": {
+    "concatenation-42": {
+      "model_sha256": "9a25ac40738c33531b3268bbae1ffc4733bda52365ad93258a859685b52f4163",
+      "trials": 430,
+      "matching_actions": 430,
+      "max_probability_difference": 1.1920928955078125e-06
+    },
+    "concatenation-43": {
+      "model_sha256": "e3378074c3bf60b89c1339db4b522433986f7656ea0c631a6f99b67095813dc6",
+      "trials": 430,
+      "matching_actions": 430,
+      "max_probability_difference": 1.4901161193847656e-06
+    },
+    "concatenation-44": {
+      "model_sha256": "1d3ded43ab46f5cabbd29e6fdff2fa905ce7cbc339462b7643e0b07b83150e20",
+      "trials": 430,
+      "matching_actions": 430,
+      "max_probability_difference": 1.2516975402832031e-06
+    },
+    "attention-42": {
+      "model_sha256": "5cfddf65aa06d57cca699f2e56d5fe9233827813052a950414ae0090f6e14e07",
+      "trials": 430,
+      "matching_actions": 430,
+      "max_probability_difference": 1.1622905731201172e-06
+    },
+    "attention-43": {
+      "model_sha256": "69b3999d79109b09e9bc33a308d973314dc69b27b487ec4e9bf5b30183365cf1",
+      "trials": 430,
+      "matching_actions": 430,
+      "max_probability_difference": 1.341104507446289e-06
+    },
+    "attention-44": {
+      "model_sha256": "223853a91cf2fca99cccf401e728e6acb306f3c972db263f41f064c00274080a",
+      "trials": 430,
+      "matching_actions": 430,
+      "max_probability_difference": 1.1324882507324219e-06
+    },
+    "contrastive_attention-42": {
+      "model_sha256": "ee660fe1046422453a3134fbbd39987c27a975a287700d2c82050152025ac3b2",
+      "trials": 430,
+      "matching_actions": 430,
+      "max_probability_difference": 1.9073486328125e-06
+    },
+    "contrastive_attention-43": {
+      "model_sha256": "b2e03667c5566e8b4a0a88c18efa0289c2b2d3ca3b073f25f11e5eec4beec892",
+      "trials": 430,
+      "matching_actions": 430,
+      "max_probability_difference": 1.2218952178955078e-06
+    },
+    "contrastive_attention-44": {
+      "model_sha256": "8dd56003ffd1c13fa45201fc011569d064cfd89a33f9b56678fcc9f60490794a",
+      "trials": 430,
+      "matching_actions": 430,
+      "max_probability_difference": 1.0132789611816406e-06
+    }
+  }
+}

@@ -2,8 +2,9 @@
 
 Recognize actions from paired video and wearable motion recordings. The current
 release compares a sensor SVM, a 3D video encoder, a 1D sensor encoder, and late
-fusion. It includes subject-based evaluation, saved-model prediction, and local
-results viewers.
+fusion. A controlled three-seed study adds cross-modal attention and paired
+contrastive pretraining. Both paths include subject-based evaluation, saved-model
+prediction, and local results viewers.
 
 ## Run
 
@@ -106,3 +107,46 @@ decoding, with 248.4 MiB peak allocated GPU memory. See
 [saved-model checks](results/multimodal/inference-cpu.json).
 Saved GPU inference exactly reproduced all recorded probabilities. CPU inference
 preserved every sensor and fusion action; one near-tied video action changed.
+
+## Attention and contrastive learning
+
+With the same environment and paired cache:
+
+```sh
+python attention.py train --device cuda
+python attention_report.py --run runs/attention --output runs/attention-report
+```
+
+The study compares concatenation, bidirectional attention, and contrastive
+pretraining followed by attention. It reports every seed and saves recoverable
+epoch checkpoints. Use `--resume` after an interruption. See
+[the protocol and inference commands](ATTENTION.md).
+
+Each variant was evaluated on the same 430 held-out trials with seeds 42, 43,
+and 44. The table reports means and sample standard deviations:
+
+| Paired model | Mean accuracy | Macro-F1, mean ± SD |
+| --- | ---: | ---: |
+| Concatenation | 81.16% | 0.801 ± 0.021 |
+| Cross-modal attention | 79.30% | 0.789 ± 0.032 |
+| Contrastive pretraining + attention | 76.82% | 0.764 ± 0.055 |
+
+**Attention and contrastive pretraining did not improve mean performance.**
+Attention reduced macro-F1 by 0.012 versus concatenation; pretraining reduced
+it by a further 0.025 on average, with substantial seed variation. These are
+observed differences, not significance claims. The new encoders also differ
+from the earlier baselines, so this does not establish a benefit from video.
+
+See [all nine runs and protocol](results/attention/summary.json),
+[learning curves](results/attention/training.json), and the
+[local results viewer](results/attention/report.html). The completed comparison
+took 31.48 minutes on an RTX 5070 with 242.2 MiB peak allocated GPU memory,
+excluding data preparation and verification. All model choices used training
+and validation subjects; the previously observed test benchmark was not used
+to select settings.
+
+[Saved GPU inference](results/attention/inference-cuda.json) reproduced every
+probability exactly. [CPU inference](results/attention/inference-cpu.json)
+preserved all 3,870 actions across the nine models; the largest probability
+difference was 0.00000191. The [paired-file CLI check](results/attention/paired-file-check.json)
+also reproduced its recorded prediction and valid attention matrices.
