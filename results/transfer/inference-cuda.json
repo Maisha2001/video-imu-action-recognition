@@ -1,0 +1,733 @@
+{
+  "checked_at_utc": "2026-10-09T22:12:26.008897+00:00",
+  "device": "cuda",
+  "verification_source_sha256": "6537156334fc9eff1160cb8de9eae15663ff9a6f32998224bcf3fc5bed36affa",
+  "checks": {
+    "transfer-42": {
+      "f25-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      }
+    },
+    "transfer-43": {
+      "f25-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      }
+    },
+    "transfer-44": {
+      "f25-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30-pooled": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30-conditional": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      }
+    }
+  }
+}

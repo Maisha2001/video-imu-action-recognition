@@ -1,0 +1,3 @@
+-r requirements-deep.txt
+torchvision==0.26.0
+Pillow==12.1.1

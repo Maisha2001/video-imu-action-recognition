@@ -1,0 +1,253 @@
+{
+  "checked_at_utc": "2026-10-09T22:15:42.711001+00:00",
+  "trial": "a1_s2_t1",
+  "seed": 42,
+  "model_sha256": "5865641f5e95572bda73e30d864590f7c995fa79748ebb985c7e22264ec5667c",
+  "weights_sha256": "b3b3357ead25631ec9c57362ff2128a92d0427e01e2cd184951a44380c3f2e9d",
+  "input_sha256": {
+    "video": "ad2e44b9a2d43648bedcff0ef928ab0bb4a954707fc50a89fede6148a82cca4b",
+    "inertial": "fb5c963f4198f75adaf6080b03c8afefea6f2a2f5b87db2f38caa647c4f8d5d4"
+  },
+  "feature_checks": [
+    {
+      "device": "cpu",
+      "max_feature_difference": 2.6226043701171875e-06,
+      "compared_values": 2048
+    },
+    {
+      "device": "cuda",
+      "max_feature_difference": 0.0,
+      "compared_values": 2048
+    }
+  ],
+  "checks": [
+    {
+      "device": "cpu",
+      "condition": "f25-both-n0-pooled",
+      "via_cli": false,
+      "top_action": 4,
+      "accepted": true,
+      "confidence": 0.2436895839801075,
+      "confidence_difference": 3.800370562689892e-08
+    },
+    {
+      "device": "cpu",
+      "condition": "f25-both-n0-conditional",
+      "via_cli": true,
+      "top_action": 4,
+      "accepted": true,
+      "confidence": 0.19636142502006296,
+      "confidence_difference": 7.537319465789061e-08
+    },
+    {
+      "device": "cpu",
+      "condition": "f25-video-n0-pooled",
+      "via_cli": false,
+      "top_action": 18,
+      "accepted": true,
+      "confidence": 0.3323468163027153,
+      "confidence_difference": 2.5483213467181187e-07
+    },
+    {
+      "device": "cpu",
+      "condition": "f25-video-n0-conditional",
+      "via_cli": true,
+      "top_action": 18,
+      "accepted": true,
+      "confidence": 0.11797069325779234,
+      "confidence_difference": 6.829013395048822e-08
+    },
+    {
+      "device": "cpu",
+      "condition": "f25-imu-n0-pooled",
+      "via_cli": false,
+      "top_action": 10,
+      "accepted": true,
+      "confidence": 0.21649804771755615,
+      "confidence_difference": 4.321520752359476e-09
+    },
+    {
+      "device": "cpu",
+      "condition": "f25-imu-n0-conditional",
+      "via_cli": true,
+      "top_action": 10,
+      "accepted": true,
+      "confidence": 0.22900282868824814,
+      "confidence_difference": 5.7906852923839125e-09
+    },
+    {
+      "device": "cpu",
+      "condition": "f100-both-n0-pooled",
+      "via_cli": false,
+      "top_action": 1,
+      "accepted": true,
+      "confidence": 0.36579597939548414,
+      "confidence_difference": 5.745931254130809e-07
+    },
+    {
+      "device": "cpu",
+      "condition": "f100-both-n0-conditional",
+      "via_cli": false,
+      "top_action": 1,
+      "accepted": true,
+      "confidence": 0.39229541479081914,
+      "confidence_difference": 5.971553163619525e-07
+    },
+    {
+      "device": "cpu",
+      "condition": "f100-video-n0-pooled",
+      "via_cli": false,
+      "top_action": 4,
+      "accepted": true,
+      "confidence": 0.2538529920689153,
+      "confidence_difference": 4.4428492074199966e-07
+    },
+    {
+      "device": "cpu",
+      "condition": "f100-video-n0-conditional",
+      "via_cli": false,
+      "top_action": 4,
+      "accepted": true,
+      "confidence": 0.209793643610068,
+      "confidence_difference": 3.5701775108476497e-07
+    },
+    {
+      "device": "cpu",
+      "condition": "f100-imu-n0-pooled",
+      "via_cli": false,
+      "top_action": 1,
+      "accepted": true,
+      "confidence": 0.41130042279797163,
+      "confidence_difference": 5.999697899605749e-08
+    },
+    {
+      "device": "cpu",
+      "condition": "f100-imu-n0-conditional",
+      "via_cli": false,
+      "top_action": 1,
+      "accepted": true,
+      "confidence": 0.5343548667612386,
+      "confidence_difference": 8.106839155530565e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f25-both-n0-pooled",
+      "via_cli": false,
+      "top_action": 4,
+      "accepted": true,
+      "confidence": 0.24368963678253389,
+      "confidence_difference": 1.479872074883204e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f25-both-n0-conditional",
+      "via_cli": false,
+      "top_action": 4,
+      "accepted": true,
+      "confidence": 0.19636151108399755,
+      "confidence_difference": 1.0690739932206483e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f25-video-n0-pooled",
+      "via_cli": false,
+      "top_action": 18,
+      "accepted": true,
+      "confidence": 0.33234661358571177,
+      "confidence_difference": 5.2115131154995e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f25-video-n0-conditional",
+      "via_cli": false,
+      "top_action": 18,
+      "accepted": true,
+      "confidence": 0.11797063535148311,
+      "confidence_difference": 1.038382471674204e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f25-imu-n0-pooled",
+      "via_cli": false,
+      "top_action": 10,
+      "accepted": true,
+      "confidence": 0.216498039320706,
+      "confidence_difference": 1.2718370911990462e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f25-imu-n0-conditional",
+      "via_cli": false,
+      "top_action": 10,
+      "accepted": true,
+      "confidence": 0.22900281975554915,
+      "confidence_difference": 1.4723384289538899e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f100-both-n0-pooled",
+      "via_cli": false,
+      "top_action": 1,
+      "accepted": true,
+      "confidence": 0.36579651654905726,
+      "confidence_difference": 3.743955229174034e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f100-both-n0-conditional",
+      "via_cli": false,
+      "top_action": 1,
+      "accepted": true,
+      "confidence": 0.392295970293294,
+      "confidence_difference": 4.16528415092543e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f100-video-n0-pooled",
+      "via_cli": false,
+      "top_action": 4,
+      "accepted": true,
+      "confidence": 0.2538534122178663,
+      "confidence_difference": 2.413596977834942e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f100-video-n0-conditional",
+      "via_cli": false,
+      "top_action": 4,
+      "accepted": true,
+      "confidence": 0.2097939821996631,
+      "confidence_difference": 1.8428155973415627e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f100-imu-n0-pooled",
+      "via_cli": false,
+      "top_action": 1,
+      "accepted": true,
+      "confidence": 0.4113003957445138,
+      "confidence_difference": 8.705043680334867e-08
+    },
+    {
+      "device": "cuda",
+      "condition": "f100-imu-n0-conditional",
+      "via_cli": false,
+      "top_action": 1,
+      "accepted": true,
+      "confidence": 0.5343548234134089,
+      "confidence_difference": 1.2441622121439622e-07
+    }
+  ],
+  "independently_recomputed_prediction_rows": 51600,
+  "recomputed_metrics": [
+    "known_accuracy",
+    "known_macro_f1",
+    "known_acceptance",
+    "unknown_rejection_recall",
+    "unknown_auroc",
+    "unknown_average_precision",
+    "calibrated_nll"
+  ],
+  "seconds": 29.610988200000065,
+  "limitation": "Raw-file checks cover one trial at two fractions, three sensor configurations and two calibration modes on CPU and CUDA. Bulk verification uses cached embeddings."
+}

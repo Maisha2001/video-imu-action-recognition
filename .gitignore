@@ -9,4 +9,5 @@ runs/
 *.mat
 *.avi
 *.pt
+*.pth
 *.npy

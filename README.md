@@ -5,7 +5,8 @@ release compares a sensor SVM, a 3D video encoder, a 1D sensor encoder, and late
 fusion. A controlled three-seed study adds cross-modal attention and paired
 contrastive pretraining. Both paths include subject-based evaluation, saved-model
 prediction, and local results viewers. A separate open-set study adds early
-prefixes, missing-sensor handling, and confidence calibration.
+prefixes, missing-sensor handling, and confidence calibration. A frozen pretrained
+video backbone provides a stronger visual comparison with conditional calibration.
 
 ## Run
 
@@ -209,3 +210,36 @@ peak allocated GPU memory, excluding data preparation and verification. See
 the largest confidence difference was 0.00000110. The
 [real-file check](results/robustness/file-inference.json) also reproduced
 quarter-trial predictions with both sensors and with either sensor missing.
+
+## Frozen video transfer
+
+The transfer experiment uses pinned Kinetics-400 R3D-18 features and learns a
+masked video/IMU classifier. See [setup, protocol, and weight terms](TRANSFER.md).
+It retains the 21-known/6-held-out-action split above and all three seeds.
+
+| Known-action accuracy | Earlier augmented model | Frozen video transfer |
+| --- | ---: | ---: |
+| 25% observed, both sensors | 46.33% | 35.81% |
+| Complete trial, both sensors | 70.44% | 52.78% |
+| Complete trial, video only | 4.76% | 30.46% |
+| Complete trial, IMU only | 67.36% | 63.19% |
+
+Video-only recognition improved, but paired recognition declined. Architecture
+and pretraining both changed, so this comparison does not isolate pretraining's
+effect. The earlier models and all results remain available.
+
+Separate confidence calibration for each fraction and sensor configuration
+rejected only **0.71% of unfamiliar complete paired trials**, while rejecting
+4.56% of known trials. Mean unknown-action AUROC was 0.387. These thresholds
+are not reliable unfamiliar-action detectors. Held-out actions are excluded
+from downstream fitting; related actions may occur in Kinetics pretraining.
+
+Feature extraction took 99.80 seconds and head training/evaluation 22.84 seconds
+on an RTX 5070, excluding download and verification. See
+[all conditions and seeds](results/transfer/summary.json),
+[learning curves](results/transfer/training.json), and the
+[local results viewer](results/transfer/report.html). Saved GPU inference
+reproduced all 51,600 actions, decisions, and confidence scores exactly; CPU
+preserved every action and decision (maximum confidence difference 0.000000761).
+The [raw-file check](results/transfer/file-inference.json) covers one trial at
+two fractions with each sensor configuration on CPU and GPU.
