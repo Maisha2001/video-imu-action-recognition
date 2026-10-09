@@ -1,0 +1,34 @@
+{
+  "checked_at_utc": "2026-10-09T03:22:34.066461+00:00",
+  "model": "augmented-42",
+  "model_sha256": "242f5ba0398a5b54428e9bd1d68872c8c5f5af20cca1cdb1e30dd3bb2213419e",
+  "trial": "a1_s2_t1",
+  "fraction": 0.25,
+  "input_sha256": {
+    "a1_s2_t1_color.avi": "ad2e44b9a2d43648bedcff0ef928ab0bb4a954707fc50a89fede6148a82cca4b",
+    "a1_s2_t1_inertial.mat": "fb5c963f4198f75adaf6080b03c8afefea6f2a2f5b87db2f38caa647c4f8d5d4"
+  },
+  "checks": {
+    "both": {
+      "action": 1,
+      "top_action": 1,
+      "accepted": true,
+      "confidence_difference": 7.143946056942241e-08,
+      "invocation_seconds": 6.311630899999727
+    },
+    "video": {
+      "action": null,
+      "top_action": 6,
+      "accepted": false,
+      "confidence_difference": 2.161772885700408e-09,
+      "invocation_seconds": 6.143722999997408
+    },
+    "imu": {
+      "action": 1,
+      "top_action": 1,
+      "accepted": true,
+      "confidence_difference": 2.0476508488798117e-08,
+      "invocation_seconds": 6.10647649999737
+    }
+  }
+}

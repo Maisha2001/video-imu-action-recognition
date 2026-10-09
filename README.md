@@ -4,7 +4,8 @@ Recognize actions from paired video and wearable motion recordings. The current
 release compares a sensor SVM, a 3D video encoder, a 1D sensor encoder, and late
 fusion. A controlled three-seed study adds cross-modal attention and paired
 contrastive pretraining. Both paths include subject-based evaluation, saved-model
-prediction, and local results viewers.
+prediction, and local results viewers. A separate open-set study adds early
+prefixes, missing-sensor handling, and confidence calibration.
 
 ## Run
 
@@ -150,3 +151,61 @@ probability exactly. [CPU inference](results/attention/inference-cpu.json)
 preserved all 3,870 actions across the nine models; the largest probability
 difference was 0.00000191. The [paired-file CLI check](results/attention/paired-file-check.json)
 also reproduced its recorded prediction and valid attention matrices.
+
+## Early and missing-sensor recognition
+
+```sh
+python robustness.py prepare --inertial data/Inertial.zip --rgb data/RGB.zip
+python robustness.py train --device cuda
+python robust_report.py --run runs/robustness --output runs/robustness-report
+python robustness.py predict --model runs/robustness/augmented-42/model.pt --video trial_color.avi --inertial trial_inertial.mat --fraction 0.25
+```
+
+Omit either input for a missing sensor. The model can abstain when confidence
+falls below its fitted threshold. This study trains on actions 1–21 and holds
+actions 22–27 out of all fitting. A separate person fits calibration; even
+subjects remain the test set. Its scores are not directly comparable to the
+27-class results above.
+
+Prefixes crop original recordings before resampling, at 25%, 50%, 75%, and
+100% of the known trial duration. These are offline segmented-trial results;
+they do not establish online detection or exact video/IMU timestamp alignment.
+See [the protocol, conditions, and limitations](ROBUSTNESS.md).
+
+Mean known-action accuracy over three seeds and 336 held-out known trials:
+
+| Test input | Full-only training | Prefix/modality augmentation |
+| --- | ---: | ---: |
+| 25% observed, both sensors | 16.07% | 46.33% |
+| 50% observed, both sensors | 56.94% | 71.63% |
+| 75% observed, both sensors | 71.92% | 74.01% |
+| Complete trial, both sensors | 72.92% | 70.44% |
+| Complete trial, IMU only | 57.14% | 67.36% |
+| Complete trial, video only | 4.76% | 4.76% |
+| Complete trial, both, IMU noise SD 0.3 | 72.02% | 69.44% |
+
+Augmentation helped partial observations and missing video, with a loss on
+complete paired trials. **Video-only recognition remains at chance.** For
+augmented quarter-trial paired inputs, calibration reduced mean NLL from
+2.152 to 1.747 and ECE from 0.261 to 0.114. It did not improve every condition:
+full-paired ECE increased from 0.090 to 0.096.
+
+**Unknown-action rejection is ineffective on paired inputs.** On 94 unknown
+trials, the fitted threshold rejected none of the complete paired examples
+for either training variant. Augmented-model mean unknown AUROC was 0.587.
+Pooling calibration across conditions produced a permissive threshold;
+confidence is not a reliable safeguard here. The results do not establish
+reliable fallback when IMU is missing or reliable unfamiliar-action detection.
+
+The complete six-model study took 6.82 minutes on an RTX 5070, with 242.7 MiB
+peak allocated GPU memory, excluding data preparation and verification. See
+[every seed and condition](results/robustness/summary.json),
+[learning curves](results/robustness/training.json), and the
+[local results viewer](results/robustness/report.html).
+
+[Saved GPU inference](results/robustness/inference-cuda.json) reproduced all
+51,600 classifications, accept/reject decisions, and confidence scores exactly.
+[CPU inference](results/robustness/inference-cpu.json) preserved every decision;
+the largest confidence difference was 0.00000110. The
+[real-file check](results/robustness/file-inference.json) also reproduced
+quarter-trial predictions with both sensors and with either sensor missing.

@@ -1,0 +1,739 @@
+{
+  "checked_at_utc": "2026-10-09T03:21:47.260929+00:00",
+  "device": "cuda",
+  "verification_source_sha256": "37e9177caac439fa464afe2ec8e09ce0877fe56e2d2ed29c39ef0e322d2ffe17",
+  "checks": {
+    "full_only-42": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      }
+    },
+    "full_only-43": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      }
+    },
+    "full_only-44": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      }
+    },
+    "augmented-42": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      }
+    },
+    "augmented-43": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      }
+    },
+    "augmented-44": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 0.0
+      }
+    }
+  }
+}

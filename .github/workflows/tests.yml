@@ -27,3 +27,4 @@ jobs:
       - run: python -m pytest -q
       - run: python multimodal.py --help
       - run: python attention.py --help
+      - run: python robustness.py --help

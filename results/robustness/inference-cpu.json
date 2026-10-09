@@ -1,0 +1,739 @@
+{
+  "checked_at_utc": "2026-10-09T03:22:45.402879+00:00",
+  "device": "cpu",
+  "verification_source_sha256": "37e9177caac439fa464afe2ec8e09ce0877fe56e2d2ed29c39ef0e322d2ffe17",
+  "checks": {
+    "full_only-42": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.972510392972865e-07
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.1077997720305746e-08
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 2.624756052505006e-07
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 4.7004983005916046e-07
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.050870989231626e-07
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.362316445351901e-07
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.9246977671123524e-08
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 3.608774737928755e-07
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.769156506991614e-07
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.770903719117594e-07
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.096020694346116e-07
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.224633075120224e-08
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 3.3549034533786326e-07
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.903077889892529e-07
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.707106990326949e-07
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.764018009586259e-07
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.0480258306784265e-08
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 3.8424720372187693e-07
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.116462827916337e-07
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.188076480118099e-07
+      }
+    },
+    "full_only-43": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 4.786644007270802e-07
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.042253388767072e-08
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 2.6835764715960053e-07
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.059032432419563e-07
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 4.386814094203828e-07
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.025672922322812e-07
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.800972623954848e-08
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 3.5671839282436224e-07
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.724238207327481e-07
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.640011904757159e-07
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.785663809709796e-07
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.8674196973251824e-08
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 4.1061231215167027e-07
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.74659446805903e-07
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.998035255694312e-07
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.283448092947452e-07
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.629723955404621e-08
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 4.310638411220147e-07
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.659280744030326e-07
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.611415426209909e-07
+      }
+    },
+    "full_only-44": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.758732302130198e-07
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.0556258259186713e-07
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 4.4724115599859005e-07
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.08487436162919e-07
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.722177821021468e-07
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.339465383198295e-07
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 8.943376539338743e-08
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 3.9566926934853086e-07
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.660986479056774e-07
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.348541543050757e-07
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.053816329927187e-07
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.0612024525791242e-07
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 4.530568425975545e-07
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 9.524608208799634e-07
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.517229754228083e-07
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.400035288372074e-07
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.0063238511937023e-07
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 3.7637264682643945e-07
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.054892386948453e-07
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 8.207297589324369e-07
+      }
+    },
+    "augmented-42": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 8.120744632300614e-07
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.0776165272619043e-08
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.295564020097899e-07
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.693022565589345e-07
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.456043975504699e-07
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 8.017247984382081e-07
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.0846880352244348e-08
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 8.695699592609074e-07
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.280617887461815e-07
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.964362955803495e-07
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.946740520568206e-07
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.073391996120332e-08
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.362555196564145e-07
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.890806211745648e-07
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.979071215384991e-07
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.652968787574821e-07
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 9.386455633586532e-09
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.572649062202117e-07
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 9.339049357182105e-07
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.0946768859154687e-06
+      }
+    },
+    "augmented-43": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.623416774458434e-07
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 9.904958790662999e-09
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.906423018453566e-07
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.301855602936946e-07
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.656219315697264e-07
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.541426953969975e-07
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.3361517000103404e-09
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.577060208095119e-07
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.533823158656361e-07
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.031937773154361e-07
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.80238753383955e-07
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 8.074973523175544e-09
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.441440196236492e-07
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.995860745677817e-07
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.051501636461509e-07
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 8.372042406001867e-07
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 8.320621809609907e-09
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.506578204528267e-07
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.093404953944059e-07
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.71345008806945e-07
+      }
+    },
+    "augmented-44": {
+      "f25-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.171875808202998e-07
+      },
+      "f25-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.515146540176371e-08
+      },
+      "f25-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 4.5846987145603535e-07
+      },
+      "f25-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.246684006698921e-07
+      },
+      "f25-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.090547298720494e-07
+      },
+      "f50-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.078151205095693e-07
+      },
+      "f50-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.6232315977471323e-08
+      },
+      "f50-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 4.961692197658074e-07
+      },
+      "f50-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.293589026595825e-07
+      },
+      "f50-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.804514335294719e-07
+      },
+      "f75-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.345627560604527e-07
+      },
+      "f75-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.579839437049202e-08
+      },
+      "f75-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 4.84682319168428e-07
+      },
+      "f75-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 6.533530743646487e-07
+      },
+      "f75-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.521849392233548e-07
+      },
+      "f100-both-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 7.237311435148719e-07
+      },
+      "f100-video-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 1.6411334013977097e-08
+      },
+      "f100-imu-n0": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.709014105348409e-07
+      },
+      "f100-both-n10": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.45387786266005e-07
+      },
+      "f100-both-n30": {
+        "trials": 430,
+        "matching_actions": 430,
+        "matching_rejections": 430,
+        "max_confidence_difference": 5.402479951732708e-07
+      }
+    }
+  }
+}
