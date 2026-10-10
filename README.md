@@ -7,6 +7,21 @@ missing-sensor tests, calibrated uncertainty, and a frozen video backbone.
 A local React replay shows predictions, confidence, accepted errors, and
 abstentions across observation fractions and sensor combinations.
 
+## Demo
+
+[Setup and screenshot gallery](docs/DEMO.md) ·
+[Open locally after setup](http://127.0.0.1:8000)
+
+The interactive demo runs on your computer with a Python service, recordings,
+and trained model packages. There is no publicly hosted instance.
+
+![Video and motion replay with six model predictions](docs/images/replay.png)
+
+Actual demo: `a1_s2_t1` (swipe left), full recording, seed 42. Paired and
+motion-only predictions match the action; video-only predictions do not.
+The frame is from [UTD-MHAD](docs/DATA.md); dataset terms are separate from the
+code license. The gallery also shows an unfamiliar-action failure.
+
 ## Repository layout
 
 - `src/`: Python training, evaluation, and service code.

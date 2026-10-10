@@ -8,6 +8,29 @@ three sensor modes, comparing attention and frozen-video models. It displays
 only predictions at or before the playback cursor. Exports contain predictions,
 source model identity, and the trial ID; recordings stay local.
 
+## Screenshots
+
+These are captures of the running app with real recordings and trained models.
+For interaction, follow [Setup](#setup), keep the service running, and
+[open the local replay](http://127.0.0.1:8000). This link is local to your computer;
+there is no public hosted demo.
+
+![Full recording replay with video, motion traces and model comparisons](images/replay.png)
+
+**Known action:** `a1_s2_t1`, swipe left, person 2, at 100%. Both models recognize
+the paired and motion-only input. The attention model abstains on video alone;
+the transfer model accepts an incorrect clap prediction.
+
+![Six accepted but incorrect predictions for a held-out jogging action](images/held-out-comparison.png)
+
+**Held-out action:** `a22_s2_t1`, jog in place, person 2, at 100%. All six displayed
+predictions are accepted and incorrect. This illustrates why confidence and
+acceptance do not establish reliable unfamiliar-action rejection.
+
+Captures use seed-42 serving packages. Video and motion come from
+[UTD-MHAD, Chen, Jafari and Kehtarnavaz (2015)](DATA.md). The illustrative video
+frame retains the dataset's separate terms; the code license does not relicense it.
+
 ## Setup
 
 Use Python 3.11 and Node 24. Create a separate Python environment. Install the
