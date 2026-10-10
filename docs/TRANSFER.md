@@ -1,5 +1,7 @@
 # Frozen video transfer
 
+Run commands from the repository root.
+
 This experiment tests a stronger visual representation and condition-specific
 confidence calibration. It improves video-only recognition but underperforms
 the earlier paired model. It does not establish reliable unknown-action rejection.
@@ -12,13 +14,13 @@ builds; these commands match the recorded CUDA 12.8 environment. For CPU, replac
 
 ```sh
 python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
-python -m pip install -r requirements-transfer.txt
-python fetch_data.py --video
-python robustness.py prepare --inertial data/Inertial.zip --rgb data/RGB.zip
+python -m pip install -r requirements/requirements-transfer.txt
+python src/fetch_data.py --video
+python src/robustness.py prepare --inertial data/Inertial.zip --rgb data/RGB.zip
 python -c "from pathlib import Path; from urllib.request import urlretrieve; Path('models').mkdir(exist_ok=True); urlretrieve('https://download.pytorch.org/models/r3d_18-b3b3357e.pth', 'models/r3d_18-b3b3357e.pth')"
-python video_features.py --inertial data/Inertial.zip --rgb data/RGB.zip --weights models/r3d_18-b3b3357e.pth --device cuda
-python transfer.py train --device cuda
-python transfer_report.py --run runs/transfer --output runs/transfer-report
+python src/video_features.py --inertial data/Inertial.zip --rgb data/RGB.zip --weights models/r3d_18-b3b3357e.pth --device cuda
+python src/transfer.py train --device cuda
+python src/transfer_report.py --run runs/transfer --output runs/transfer-report
 ```
 
 The 133,546,016-byte weight file must have SHA256
@@ -29,8 +31,8 @@ versions, and settings after interruption. Choose new output folders for new
 experiments. `--stop-at-utc` accepts an ISO timestamp with an offset.
 
 ```sh
-python transfer.py predict --model runs/transfer/transfer-42/model.pt --weights models/r3d_18-b3b3357e.pth --video trial_color.avi --inertial trial_inertial.mat --fraction 0.25
-python verify_transfer.py --features data/video-features --prefix-cache data/prefix-cache --run runs/transfer --device cpu --output runs/transfer/inference-cpu.json
+python src/transfer.py predict --model runs/transfer/transfer-42/model.pt --weights models/r3d_18-b3b3357e.pth --video trial_color.avi --inertial trial_inertial.mat --fraction 0.25
+python src/verify_transfer.py --features data/video-features --prefix-cache data/prefix-cache --run runs/transfer --device cpu --output runs/transfer/inference-cpu.json
 python -m pytest -q
 ```
 
@@ -91,10 +93,10 @@ of the cached-feature models took 22.84 seconds with 69.5 MiB peak allocation.
 These exclude downloads, cache validation, and verification, and are not serving
 latency measurements. Raw-file inference loads a backbone as well as the head.
 
-[GPU](results/transfer/inference-cuda.json) and [CPU](results/transfer/inference-cpu.json)
+[GPU](../results/transfer/inference-cuda.json) and [CPU](../results/transfer/inference-cpu.json)
 checks cover 51,600 cached-feature predictions. GPU confidences match exactly;
 CPU changes at most 0.000000761, preserving every action and rejection decision.
-The [raw-file evidence](results/transfer/file-inference.json) checks a single
+The [raw-file evidence](../results/transfer/file-inference.json) checks a single
 trial at 25% and 100%, each sensor configuration and both calibration schemes,
 including three CLI calls. It also re-extracts all four video prefixes on both
 devices. This is a smoke test, not an exhaustive raw-video reproduction claim.

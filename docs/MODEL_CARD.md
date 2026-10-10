@@ -29,7 +29,7 @@ results are published.
 
 ## Failure analysis
 
-[Recomputed error counts](results/release/failure-analysis.json) pool three
+[Recomputed error counts](../results/release/failure-analysis.json) pool three
 seeds over the same 336 known and 94 held-out trials. These counts are repeated
 predictions, not 1,290 independent recordings.
 

@@ -1,5 +1,7 @@
 # Paired representation learning
 
+Run commands from the repository root.
+
 Three controlled variants share compact video/IMU token encoders and the same
 training protocol:
 
@@ -58,9 +60,9 @@ been observed; this is repeated evaluation, not a new blind test.
 Use the environment and paired cache described in the README:
 
 ```sh
-python attention.py train --device cuda
-python attention_report.py --run runs/attention --output runs/attention-report
-python attention.py predict --model runs/attention/attention-42/model.pt --video trial_color.avi --inertial trial_inertial.mat
+python src/attention.py train --device cuda
+python src/attention_report.py --run runs/attention --output runs/attention-report
+python src/attention.py predict --model runs/attention/attention-42/model.pt --video trial_color.avi --inertial trial_inertial.mat
 ```
 
 Open `runs/attention-report/report.html`. Prediction also returns average
@@ -78,7 +80,7 @@ history through an atomic file replacement. Protocol, selection, and result
 records are also replaced atomically. To resume after interruption:
 
 ```sh
-python attention.py train --device cuda --resume
+python src/attention.py train --device cuda --resume
 ```
 
 Use the same run folder, source files, inputs, configuration, device, and
@@ -96,5 +98,5 @@ preserved in its original results.
 To check saved-model predictions without retraining:
 
 ```sh
-python verify_attention.py --cache data/paired-cache --run runs/attention --device cpu --output runs/attention-cpu-check.json
+python src/verify_attention.py --cache data/paired-cache --run runs/attention --device cpu --output runs/attention-cpu-check.json
 ```

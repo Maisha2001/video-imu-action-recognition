@@ -1,5 +1,7 @@
 # Local replay
 
+Run commands from the repository root.
+
 The React/TypeScript app replays paired video frames and six motion channels.
 It calls the checked inference service for four observation fractions and
 three sensor modes, comparing attention and frozen-video models. It displays
@@ -15,8 +17,8 @@ CPU build below, or the matched CUDA 12.8 builds in [TRANSFER.md](TRANSFER.md):
 python -m venv .venv
 # Activate .venv using your shell.
 python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -r requirements-replay.txt
-python fetch_data.py --video
+python -m pip install -r requirements/requirements-replay.txt
+python src/fetch_data.py --video
 ```
 
 Reproduce the trained models using [ROBUSTNESS.md](ROBUSTNESS.md) and
@@ -26,12 +28,12 @@ trained weights and dataset recordings are not distributed. The frozen
 backbone is downloaded from its official host and verified by full checksum.
 
 ```sh
-python replay_data.py --rgb data/RGB.zip --inertial data/Inertial.zip --output runs/replay
+python src/replay_data.py --rgb data/RGB.zip --inertial data/Inertial.zip --output runs/replay
 cd web
 npm ci
 npm run build
 cd ..
-python replay_server.py --package robust=runs/serving/robust --package transfer=runs/serving/transfer --replay runs/replay
+python src/replay_server.py --package robust=runs/serving/robust --package transfer=runs/serving/transfer --replay runs/replay
 ```
 
 Open `http://127.0.0.1:8000`. On Windows use `npm.cmd` if PowerShell blocks its
@@ -66,9 +68,9 @@ executed training runs. Repeating an identical successful import reuses its run.
 No remote tracking address or telemetry is used.
 
 ```sh
-python track_results.py --results results/attention/summary.json --store runs/tracking
-python track_results.py --results results/robustness/summary.json --store runs/tracking
-python track_results.py --results results/transfer/summary.json --store runs/tracking
+python src/track_results.py --results results/attention/summary.json --store runs/tracking
+python src/track_results.py --results results/robustness/summary.json --store runs/tracking
+python src/track_results.py --results results/transfer/summary.json --store runs/tracking
 ```
 
 To open MLflow locally, set `MLFLOW_DISABLE_TELEMETRY=true` and
@@ -98,11 +100,11 @@ download research recordings or weights. For real-data verification, run the
 replay server on port 8017, then:
 
 ```sh
-python verify_replay.py --replay runs/replay --packages runs/serving --output runs/replay-check.json
+python src/verify_replay.py --replay runs/replay --packages runs/serving --output runs/replay-check.json
 ```
 
 Optional real browser tests use `ACTIVITY_DEMO_URL=http://127.0.0.1:8017`.
 `ACTIVITY_BROWSER_CHANNEL=msedge` uses installed Edge on Windows; otherwise
-Playwright uses its installed Chromium. See [release evidence](results/release)
+Playwright uses its installed Chromium. See [release evidence](../results/release)
 and [model limitations](MODEL_CARD.md). Use trusted local inputs; the service
 has no public authentication or hardened media-decoder sandbox.

@@ -1,5 +1,7 @@
 # Inference service and native runtime
 
+Run commands from the repository root.
+
 Two explicit model packages are supported: the prefix-augmented attention model
 and the frozen-video transfer model. Both use seed 42, the first declared seed,
 with their original fitted weights and calibration. They are experimental
@@ -13,10 +15,10 @@ from [TRANSFER.md](TRANSFER.md). First reproduce the desired models using
 [ROBUSTNESS.md](ROBUSTNESS.md) and [TRANSFER.md](TRANSFER.md). Export to new folders:
 
 ```sh
-python -m pip install -r requirements-serving.txt
-python export_serving.py --family robust --model runs/robustness/augmented-42/model.pt --output runs/serving/robust
-python export_serving.py --family transfer --model runs/transfer/transfer-42/model.pt --weights models/r3d_18-b3b3357e.pth --output runs/serving/transfer
-python inference_api.py --package robust=runs/serving/robust --package transfer=runs/serving/transfer
+python -m pip install -r requirements/requirements-serving.txt
+python src/export_serving.py --family robust --model runs/robustness/augmented-42/model.pt --output runs/serving/robust
+python src/export_serving.py --family transfer --model runs/transfer/transfer-42/model.pt --weights models/r3d_18-b3b3357e.pth --output runs/serving/transfer
+python src/inference_api.py --package robust=runs/serving/robust --package transfer=runs/serving/transfer
 ```
 
 Only include packages you want to serve. The process binds to `127.0.0.1:8000`;
@@ -118,9 +120,9 @@ calibration; C++ handles the exported graphs, not raw AVI/MAT parsing.
 ## Verify and measure
 
 ```sh
-python verify_serving.py --prefix-cache data/prefix-cache --features data/video-features --packages runs/serving --native build/activity_infer --work runs/native-check --output runs/native-check/verification.json
-python verify_api.py --packages runs/serving --rgb data/RGB.zip --inertial data/Inertial.zip --weights models/r3d_18-b3b3357e.pth --native build/activity_infer --work runs/api-check --output runs/api-check/verification.json
-python benchmark_serving.py --prefix-cache data/prefix-cache --features data/video-features --packages runs/serving --native build/activity_infer --rgb data/RGB.zip --weights models/r3d_18-b3b3357e.pth --work runs/latency --output runs/latency/latency.json
+python src/verify_serving.py --prefix-cache data/prefix-cache --features data/video-features --packages runs/serving --native build/activity_infer --work runs/native-check --output runs/native-check/verification.json
+python src/verify_api.py --packages runs/serving --rgb data/RGB.zip --inertial data/Inertial.zip --weights models/r3d_18-b3b3357e.pth --native build/activity_infer --work runs/api-check --output runs/api-check/verification.json
+python src/benchmark_serving.py --prefix-cache data/prefix-cache --features data/video-features --packages runs/serving --native build/activity_infer --rgb data/RGB.zip --weights models/r3d_18-b3b3357e.pth --work runs/latency --output runs/latency/latency.json
 ```
 
 Append `.exe` to the native path on Windows. The HTTP verifier starts a temporary
@@ -129,19 +131,19 @@ tests finish. Models and inputs are loaded before timing; decoding, validation,
 network transfer, and model loading are excluded from graph benchmarks. The
 video backbone is measured separately from the transfer classifier.
 
-[Classifier parity](results/serving/parity.json) covers all 430 held-out trials
+[Classifier parity](../results/serving/parity.json) covers all 430 held-out trials
 and 20 conditions: 8,600 robustness decisions and 17,200 transfer decisions
 across both calibration modes. Every action and accept/reject decision matched
 PyTorch. Maximum logit differences were 0.00000763 and 0.00000859 respectively.
 The C++ runner matched Python ONNX logits exactly on 160 inputs per family,
 covering both known/held-out actions, all test people and every condition.
 
-[Real HTTP checks](results/serving/http.json) cover two fixed trials, all four
+[Real HTTP checks](../results/serving/http.json) cover two fixed trials, all four
 fractions, three sensor configurations, and both families: 48 requests matched
 original file inference. Eight native video-backbone outputs also matched
 Python ONNX features exactly. These subsets do not establish exhaustive
 raw-video reproduction or production reliability. See the separate
-[latency measurements](results/serving/latency.json); small-sample timings are
+[latency measurements](../results/serving/latency.json); small-sample timings are
 hardware-specific and do not guarantee real-time operation or a speedup.
 
 Recorded Windows CPU graph latency, median / p95 in milliseconds:

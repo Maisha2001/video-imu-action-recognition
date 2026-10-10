@@ -48,7 +48,7 @@ def verify(url, replay, packages, output):
     result = {'checked_at_utc': datetime.now(timezone.utc).isoformat(), 'seconds':time.perf_counter()-started,
               'checks':checks, 'scope':'Four fixed trials,4 fractions,3 modalities,2 models; real HTTP versus direct checked runtime. Demo samples are not evaluation estimates.',
               'replay_index_sha256':file_hash(Path(replay)/'index.json'),
-              'source_sha256':{name:file_hash(name) for name in ['replay_data.py','replay_server.py','verify_replay.py']}}
+              'source_sha256':{name:file_hash(Path(__file__).parent / name) for name in ['replay_data.py','replay_server.py','verify_replay.py']}}
     atomic_json(output,result)
 
 

@@ -11,9 +11,9 @@ jobs:
         with:
           python-version: '3.11'
           cache: pip
-      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pip install -r requirements/requirements-dev.txt
       - run: python -m pytest -q
-      - run: python activity.py --help
+      - run: python src/activity.py --help
   multimodal:
     runs-on: ubuntu-latest
     steps:
@@ -23,7 +23,7 @@ jobs:
           python-version: '3.11'
           cache: pip
       - run: python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cpu
-      - run: python -m pip install -r requirements-replay.txt
+      - run: python -m pip install -r requirements/requirements-replay.txt
       - name: Build native runner
         run: |
           curl -fL https://github.com/microsoft/onnxruntime/releases/download/v1.31.0/onnxruntime-linux-x64-1.31.0.tgz -o /tmp/ort.tgz
@@ -36,15 +36,15 @@ jobs:
           ACTIVITY_NATIVE: /tmp/activity-build/activity_infer
           MLFLOW_DISABLE_TELEMETRY: 'true'
           DO_NOT_TRACK: 'true'
-      - run: python multimodal.py --help
-      - run: python attention.py --help
-      - run: python robustness.py --help
-      - run: python transfer.py --help
-      - run: python inference_api.py --help
-      - run: python export_serving.py --help
-      - run: python replay_data.py --help
-      - run: python replay_server.py --help
-      - run: python track_results.py --help
+      - run: python src/multimodal.py --help
+      - run: python src/attention.py --help
+      - run: python src/robustness.py --help
+      - run: python src/transfer.py --help
+      - run: python src/inference_api.py --help
+      - run: python src/export_serving.py --help
+      - run: python src/replay_data.py --help
+      - run: python src/replay_server.py --help
+      - run: python src/track_results.py --help
   replay-ui:
     runs-on: ubuntu-latest
     defaults:

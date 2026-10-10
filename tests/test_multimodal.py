@@ -180,7 +180,7 @@ def test_prediction_cli(trained_pair):
     video_path, imu_path = directory / "clip.avi", directory / "signal.mat"
     write_video(video_path)
     savemat(imu_path, {"d_iner": imu[0].T})
-    result = subprocess.run([sys.executable, "multimodal.py", "predict", "--model",
+    result = subprocess.run([sys.executable, "src/multimodal.py", "predict", "--model",
                              str(directory / "original/model.pt"), "--video", str(video_path),
                              "--inertial", str(imu_path)], capture_output=True, text=True, check=True)
     prediction = json.loads(result.stdout)

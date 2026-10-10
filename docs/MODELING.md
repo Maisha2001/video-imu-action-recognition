@@ -1,5 +1,7 @@
 # Video and sensor comparison
 
+Run commands from the repository root.
+
 The video encoder uses three 3D convolutions (16, 32, 64 channels), batch
 normalization, ReLU, global mean pooling, and a 27-class head. Strided
 convolutions reduce space and time without nondeterministic CUDA pooling.
@@ -51,7 +53,7 @@ for video, and 0.000336 for fusion. Saved GPU inference matched exactly. Check
 your local model without retraining:
 
 ```sh
-python verify_inference.py --cache data/paired-cache --run runs/multimodal --device cpu --output runs/cpu-check.json
+python src/verify_inference.py --cache data/paired-cache --run runs/multimodal --device cpu --output runs/cpu-check.json
 ```
 
 The verifier checks model and input hashes, then reports differences and scores.

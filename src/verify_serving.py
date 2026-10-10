@@ -129,7 +129,7 @@ def verify(prefix, features, packages, native, work, output, stop=None):
                                   'latency':{'pytorch_cpu':torch_timing,'python_onnx_cpu':ort_timing,'cpp_onnx_cpu':cpp_timing}}
     report['latency_scope']='One CPU thread, batch1, resident models and preprocessed inputs; eight fixed complete paired trials, five warmups, ten passes. Excludes model loading, file decoding, network, and frozen video backbone. Python bypasses input validation for graph timing; C++ includes tensor-view setup. No statistical speedup guarantee.'
     report['native_scope']='160 inputs per model: actions1/22, people2/4/6/8, repetition1, all20 conditions. Full PyTorch/ONNX classifier parity covers430 held-out trials and all20 conditions; cached video features used for transfer.'
-    report['source_sha256']={name:file_hash(name) for name in ['export_serving.py','serving_runtime.py','inference_api.py','verify_serving.py','native/infer.cpp']}
+    report['source_sha256']={name:file_hash(Path(__file__).parent / ('../' + name if name.startswith('native/') else name)) for name in ['export_serving.py','serving_runtime.py','inference_api.py','verify_serving.py','native/infer.cpp']}
     report['seconds']=time.perf_counter()-started
     atomic_json(output,report)
     return report

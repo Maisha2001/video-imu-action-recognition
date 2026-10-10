@@ -52,7 +52,7 @@ def benchmark(prefix_cache, features, packages, native, rgb, weights, work, outp
     _,cpp_timing=native_run(native,packages/'transfer/backbone.onnx',records,work/'backbone',3,names=('video',))
     report['backbone']={'pytorch_cpu':torch_timing,'python_onnx_cpu':ort_timing,'cpp_onnx_cpu':cpp_timing}
     report['scope']='Sequential warmed CPU graph measurements, one thread, batch1. Classifiers:8 fixed full-paired trials,5 warmups,10 passes. Backbone:2 fixed trials at4 fractions,5 warmups,3 passes. Excludes load, decoding, HTTP and validation. C++ includes tensor-view setup. Other applications and OS load are uncontrolled; no statistical speedup or real-time guarantee.'
-    report['source_sha256']={name:file_hash(name) for name in ['benchmark_serving.py','verify_serving.py','serving_runtime.py','native/infer.cpp']}
+    report['source_sha256']={name:file_hash(Path(__file__).parent / ('../' + name if name.startswith('native/') else name)) for name in ['benchmark_serving.py','verify_serving.py','serving_runtime.py','native/infer.cpp']}
     report['package_model_sha256']={f:ModelRuntime(packages/f).manifest['files'] for f in ['robust','transfer']}
     atomic_json(output,report)
 

@@ -1,5 +1,7 @@
 # Early recognition and uncertainty
 
+Run commands from the repository root.
+
 This experiment compares full paired training with prefix and modality
 augmentation. Both use the same compact attention model and seeds 42, 43, and
 44. Models train from scratch on **actions 1–21**. Actions 22–27 are unfamiliar
@@ -76,10 +78,10 @@ Use the environment and verified archives in the README. The prefix cache
 needs about 1.5 GB beyond the archives and existing paired cache.
 
 ```sh
-python robustness.py prepare --inertial data/Inertial.zip --rgb data/RGB.zip
-python robustness.py train --device cuda
-python robust_report.py --run runs/robustness --output runs/robustness-report
-python robustness.py predict --model runs/robustness/augmented-42/model.pt --video trial_color.avi --inertial trial_inertial.mat --fraction 0.25
+python src/robustness.py prepare --inertial data/Inertial.zip --rgb data/RGB.zip
+python src/robustness.py train --device cuda
+python src/robust_report.py --run runs/robustness --output runs/robustness-report
+python src/robustness.py predict --model runs/robustness/augmented-42/model.pt --video trial_color.avi --inertial trial_inertial.mat --fraction 0.25
 ```
 
 Omit either input for one-sensor prediction. `action` is null when the model
@@ -95,5 +97,5 @@ stages with exit code 75. Completed evaluations may be recomputed on resume
 under the unchanged protocol. No model or threshold is selected using test data.
 
 ```sh
-python verify_robustness.py --cache data/prefix-cache --run runs/robustness --device cpu --output runs/robustness-cpu-check.json
+python src/verify_robustness.py --cache data/prefix-cache --run runs/robustness --device cpu --output runs/robustness-cpu-check.json
 ```

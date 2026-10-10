@@ -119,7 +119,7 @@ def test_saved_model_and_cli_prediction_agree(tmp_path, trials_and_signals):
     model_path, input_path = tmp_path / "model.joblib", tmp_path / "sample.mat"
     joblib.dump(model, model_path)
     savemat(input_path, {"d_iner": signals[0]})
-    result = subprocess.run([sys.executable, "activity.py", "predict", "--model", str(model_path),
+    result = subprocess.run([sys.executable, "src/activity.py", "predict", "--model", str(model_path),
                              "--input", str(input_path)], capture_output=True, text=True, check=True)
     assert json.loads(result.stdout)["action"] == int(model.predict(features(signals[0])[None])[0])
 

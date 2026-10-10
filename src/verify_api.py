@@ -27,7 +27,7 @@ def verify(packages, rgb, inertial, weights, native, work, output):
     with socket.socket() as probe:
         probe.bind(('127.0.0.1', 0))
         port = probe.getsockname()[1]
-    command = [sys.executable, 'inference_api.py', '--package', f'robust={packages / "robust"}',
+    command = [sys.executable, str(Path(__file__).with_name('inference_api.py')), '--package', f'robust={packages / "robust"}',
                '--package', f'transfer={packages / "transfer"}', '--port', str(port)]
     checks, backbone_records = [], []
     with (work / 'server.log').open('w') as log:
@@ -91,7 +91,7 @@ def verify(packages, rgb, inertial, weights, native, work, output):
     result={'checked_at_utc':datetime.now(timezone.utc).isoformat(),'transport':'actual HTTP over127.0.0.1; server stopped after checks',
             'checks':checks,'native_backbone':{'records':len(backbone_records),'max_feature_difference':float(np.abs(native_values-expected).max()),'timing':timing},
             'scope':'Two fixed known/downstream-held-out trials, all4 fractions and all3 sensor masks per family. HTTP timings include preprocessing; one request per condition, not a latency percentile benchmark. Native backbone timings use8 prepared clips, one thread, five warmups, three passes; decoding excluded.',
-            'source_sha256':{name:file_hash(name) for name in ['inference_api.py','serving_runtime.py','verify_api.py','native/infer.cpp']}}
+            'source_sha256':{name:file_hash(Path(__file__).parent / ('../' + name if name.startswith('native/') else name)) for name in ['inference_api.py','serving_runtime.py','verify_api.py','native/infer.cpp']}}
     atomic_json(output,result)
     print(json.dumps({'http_checks':len(checks),'native_backbone':result['native_backbone']}))
 
