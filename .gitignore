@@ -15,4 +15,10 @@ runs/
 *.dll
 *.bin
 build/
+web/node_modules/
+web/dist/
+web/test-results/
+web/playwright-report/
+mlruns/
+*.db
 *.npy

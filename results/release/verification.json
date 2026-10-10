@@ -1,0 +1,65 @@
+{
+  "checked_at_utc": "2026-10-10T03:33:42.192933+00:00",
+  "python": "3.11.15",
+  "platform": "Windows",
+  "packages": {
+    "torch": "2.11.0+cpu",
+    "torchvision": "0.26.0+cpu",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.31.0",
+    "fastapi": "0.143.0",
+    "mlflow": "3.17.0",
+    "pytest": "9.1.1"
+  },
+  "fresh_environment": true,
+  "pip_check": "passed",
+  "python_tests": {
+    "passed": 83,
+    "seconds": 29.3,
+    "native_runner_enabled": true,
+    "warnings": "Fixed-shape ONNX tracing, dependency deprecations, inaccessible optional pytest cache; all tests passed."
+  },
+  "frontend": {
+    "node": "24.13.0",
+    "npm": "11.6.2",
+    "unit_tests_passed": 4,
+    "typescript_check": "passed",
+    "production_build": "passed",
+    "fixture_browser_test": "passed; real-data CLI browser case skipped in that fixture run"
+  },
+  "baseline_reproduction": {
+    "all_predictions_metrics_validation_choices_equal": true,
+    "accuracy": 0.7813953488372093,
+    "macro_f1": 0.7751488727849447,
+    "seconds": 1.0478371000008337
+  },
+  "browser_checks": [
+    "Real recording analysis:24 conditions",
+    "Exported JSON:24 predictions with trial and model identities",
+    "Changing to held-out recording clears predictions and shows thigh placement",
+    "Playback advances frames and stops at end; pause freezes cursor",
+    "Before25%:no prediction shown",
+    "Mobile375px content width equals viewport width; no horizontal overflow"
+  ],
+  "local_tracking_server": {
+    "root_http_status": 200,
+    "experiment_api": "Activity recognition experiment found",
+    "telemetry_disabled": true
+  },
+  "reproduction_scope": "Fresh Python CPU environment and dependency checks; baseline retraining exactly reproduced metrics and predictions; existing checked model packages replayed96 conditions exactly. Earlier full GPU studies are preserved with their measured results and reproduction commands, not claimed rerun in this release check.",
+  "source_sha256": {
+    "replay_data.py": "28c1665a7af3c4a006d06dc58d93b6e5882324986b856e1cccfc3f534a270d5d",
+    "replay_server.py": "abe2bad212d28db0e1403c27e46352172adc6de289b2fbed0ed0bba27f0c808d",
+    "track_results.py": "db230ca095ca977527a2fbf88ba6c7d5995949ba83e3ba7952f43c900d9aa63b",
+    "verify_replay.py": "031ae57b4a77bb9666d8209b74a79bdb10736cfba5c675776734d4748203ca26",
+    "analyze_failures.py": "41ece7941fe72ccaf59b08bea033f5713c39d6cb1807b4340f20b3ed18d117e2",
+    "web/src/domain.ts": "0ff512e896cc2011c6f503bafdd48ed1ba76d3627120a69dab109ad5b314e063",
+    "web/src/main.tsx": "a307c41c52121d9fd48936f3cf9d7ca358cb6a2b6544d164064be75e75acc6cc",
+    "web/src/style.css": "39a342322385097f54090a8d135e8c0178a51f0a737e741a93bf254d4a4b697f",
+    "web/package-lock.json": "239c0c0a7255d0ee03e5e1f4df9d7ba64b8a8933118d53043b99ebf02e34bc95",
+    "tests/test_replay.py": "25feb957785cd0a4aaf63a43c105ae2261a8c75275c08d67d8e804815a022b2d"
+  }
+}

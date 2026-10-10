@@ -1,0 +1,758 @@
+{
+  "method": "Descriptive post-hoc analysis of published predictions; no model or threshold changes. Counts pool three seeds on the same trials and are not independent sample sizes.",
+  "models": {
+    "robustness": {
+      "prediction_sha256": {
+        "robustness/augmented-42.jsonl": "75285c640f6e65e56b80d56868d36902c59d63486098b0249c9441feea0e517a",
+        "robustness/augmented-43.jsonl": "6013f1ad30fa969ac0e39d6e1c4a1aa2087394963bf2d36377a48be49356a913",
+        "robustness/augmented-44.jsonl": "59c8a5486925ed80e9e334a09a84a8a1ded4798ddfc2b7a5f38f9250b562dfd5"
+      },
+      "conditions": {
+        "f25-both-n0": {
+          "known_accuracy": 0.4632936507936508,
+          "known_accepted_wrong": 541,
+          "known_predictions": 1008,
+          "unknown_accepted": 282,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 15,
+              "recall": 0.08333333333333333,
+              "predictions": 48
+            },
+            {
+              "action": 20,
+              "recall": 0.08333333333333333,
+              "predictions": 48
+            },
+            {
+              "action": 10,
+              "recall": 0.125,
+              "predictions": 48
+            },
+            {
+              "action": 19,
+              "recall": 0.125,
+              "predictions": 48
+            },
+            {
+              "action": 5,
+              "recall": 0.3333333333333333,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 15,
+              "predicted": 12,
+              "count": 18
+            },
+            {
+              "actual": 2,
+              "predicted": 1,
+              "count": 15
+            },
+            {
+              "actual": 5,
+              "predicted": 14,
+              "count": 15
+            },
+            {
+              "actual": 10,
+              "predicted": 1,
+              "count": 14
+            },
+            {
+              "actual": 20,
+              "predicted": 18,
+              "count": 14
+            }
+          ]
+        },
+        "f25-video-n0": {
+          "known_accuracy": 0.047619047619047616,
+          "known_accepted_wrong": 618,
+          "known_predictions": 1008,
+          "unknown_accepted": 187,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 1,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 3,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 4,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 5,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 7,
+              "recall": 0.0,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 1,
+              "predicted": 2,
+              "count": 16
+            },
+            {
+              "actual": 1,
+              "predicted": 6,
+              "count": 16
+            },
+            {
+              "actual": 1,
+              "predicted": 18,
+              "count": 16
+            },
+            {
+              "actual": 2,
+              "predicted": 6,
+              "count": 16
+            },
+            {
+              "actual": 2,
+              "predicted": 18,
+              "count": 16
+            }
+          ]
+        },
+        "f25-imu-n0": {
+          "known_accuracy": 0.46130952380952384,
+          "known_accepted_wrong": 543,
+          "known_predictions": 1008,
+          "unknown_accepted": 282,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 20,
+              "recall": 0.0625,
+              "predictions": 48
+            },
+            {
+              "action": 15,
+              "recall": 0.08333333333333333,
+              "predictions": 48
+            },
+            {
+              "action": 10,
+              "recall": 0.10416666666666667,
+              "predictions": 48
+            },
+            {
+              "action": 19,
+              "recall": 0.10416666666666667,
+              "predictions": 48
+            },
+            {
+              "action": 11,
+              "recall": 0.1875,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 15,
+              "predicted": 12,
+              "count": 17
+            },
+            {
+              "actual": 20,
+              "predicted": 18,
+              "count": 16
+            },
+            {
+              "actual": 10,
+              "predicted": 1,
+              "count": 15
+            },
+            {
+              "actual": 9,
+              "predicted": 2,
+              "count": 14
+            },
+            {
+              "actual": 13,
+              "predicted": 14,
+              "count": 13
+            }
+          ]
+        },
+        "f100-both-n0": {
+          "known_accuracy": 0.7043650793650794,
+          "known_accepted_wrong": 298,
+          "known_predictions": 1008,
+          "unknown_accepted": 282,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 20,
+              "recall": 0.2708333333333333,
+              "predictions": 48
+            },
+            {
+              "action": 15,
+              "recall": 0.4583333333333333,
+              "predictions": 48
+            },
+            {
+              "action": 5,
+              "recall": 0.4791666666666667,
+              "predictions": 48
+            },
+            {
+              "action": 17,
+              "recall": 0.4791666666666667,
+              "predictions": 48
+            },
+            {
+              "action": 4,
+              "recall": 0.5208333333333334,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 15,
+              "predicted": 12,
+              "count": 19
+            },
+            {
+              "actual": 5,
+              "predicted": 17,
+              "count": 12
+            },
+            {
+              "actual": 20,
+              "predicted": 18,
+              "count": 12
+            },
+            {
+              "actual": 4,
+              "predicted": 6,
+              "count": 11
+            },
+            {
+              "actual": 13,
+              "predicted": 18,
+              "count": 11
+            }
+          ]
+        },
+        "f100-video-n0": {
+          "known_accuracy": 0.047619047619047616,
+          "known_accepted_wrong": 639,
+          "known_predictions": 1008,
+          "unknown_accepted": 216,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 1,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 3,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 4,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 5,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 7,
+              "recall": 0.0,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 1,
+              "predicted": 2,
+              "count": 16
+            },
+            {
+              "actual": 1,
+              "predicted": 6,
+              "count": 16
+            },
+            {
+              "actual": 1,
+              "predicted": 18,
+              "count": 16
+            },
+            {
+              "actual": 2,
+              "predicted": 6,
+              "count": 16
+            },
+            {
+              "actual": 2,
+              "predicted": 18,
+              "count": 16
+            }
+          ]
+        },
+        "f100-imu-n0": {
+          "known_accuracy": 0.6736111111111112,
+          "known_accepted_wrong": 329,
+          "known_predictions": 1008,
+          "unknown_accepted": 282,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 20,
+              "recall": 0.14583333333333334,
+              "predictions": 48
+            },
+            {
+              "action": 15,
+              "recall": 0.3958333333333333,
+              "predictions": 48
+            },
+            {
+              "action": 5,
+              "recall": 0.4166666666666667,
+              "predictions": 48
+            },
+            {
+              "action": 8,
+              "recall": 0.4166666666666667,
+              "predictions": 48
+            },
+            {
+              "action": 17,
+              "recall": 0.4166666666666667,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 20,
+              "predicted": 18,
+              "count": 22
+            },
+            {
+              "actual": 15,
+              "predicted": 12,
+              "count": 19
+            },
+            {
+              "actual": 4,
+              "predicted": 14,
+              "count": 13
+            },
+            {
+              "actual": 1,
+              "predicted": 15,
+              "count": 12
+            },
+            {
+              "actual": 4,
+              "predicted": 6,
+              "count": 11
+            }
+          ]
+        }
+      }
+    },
+    "transfer": {
+      "prediction_sha256": {
+        "transfer/transfer-42.jsonl": "555e5e804672b9abe99632e049fd6ad422025e87839c262056479aa0fba5917d",
+        "transfer/transfer-43.jsonl": "b26afb5e054ca11d9b51a4cda408b10d7c428ffb8c2869f20a5e1c4c1c8c18c2",
+        "transfer/transfer-44.jsonl": "a9b15b54c5a86ff857bb836ccaf13bb0897cabc2eb277bc40a9bef0bbd4d7e75"
+      },
+      "conditions": {
+        "f25-both-n0-conditional": {
+          "known_accuracy": 0.35813492063492064,
+          "known_accepted_wrong": 618,
+          "known_predictions": 1008,
+          "unknown_accepted": 278,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 5,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 19,
+              "recall": 0.0625,
+              "predictions": 48
+            },
+            {
+              "action": 15,
+              "recall": 0.125,
+              "predictions": 48
+            },
+            {
+              "action": 10,
+              "recall": 0.14583333333333334,
+              "predictions": 48
+            },
+            {
+              "action": 11,
+              "recall": 0.14583333333333334,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 20,
+              "predicted": 18,
+              "count": 21
+            },
+            {
+              "actual": 13,
+              "predicted": 14,
+              "count": 20
+            },
+            {
+              "actual": 15,
+              "predicted": 21,
+              "count": 19
+            },
+            {
+              "actual": 6,
+              "predicted": 16,
+              "count": 18
+            },
+            {
+              "actual": 11,
+              "predicted": 20,
+              "count": 16
+            }
+          ]
+        },
+        "f25-video-n0-conditional": {
+          "known_accuracy": 0.19444444444444445,
+          "known_accepted_wrong": 786,
+          "known_predictions": 1008,
+          "unknown_accepted": 267,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 3,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 15,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 16,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 19,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 5,
+              "recall": 0.020833333333333332,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 17,
+              "predicted": 14,
+              "count": 17
+            },
+            {
+              "actual": 13,
+              "predicted": 14,
+              "count": 15
+            },
+            {
+              "actual": 14,
+              "predicted": 21,
+              "count": 15
+            },
+            {
+              "actual": 11,
+              "predicted": 20,
+              "count": 14
+            },
+            {
+              "actual": 3,
+              "predicted": 12,
+              "count": 12
+            }
+          ]
+        },
+        "f25-imu-n0-conditional": {
+          "known_accuracy": 0.42956349206349204,
+          "known_accepted_wrong": 510,
+          "known_predictions": 1008,
+          "unknown_accepted": 279,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 15,
+              "recall": 0.0625,
+              "predictions": 48
+            },
+            {
+              "action": 7,
+              "recall": 0.08333333333333333,
+              "predictions": 48
+            },
+            {
+              "action": 10,
+              "recall": 0.125,
+              "predictions": 48
+            },
+            {
+              "action": 11,
+              "recall": 0.14583333333333334,
+              "predictions": 48
+            },
+            {
+              "action": 20,
+              "recall": 0.14583333333333334,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 20,
+              "predicted": 18,
+              "count": 22
+            },
+            {
+              "actual": 9,
+              "predicted": 2,
+              "count": 21
+            },
+            {
+              "actual": 8,
+              "predicted": 20,
+              "count": 19
+            },
+            {
+              "actual": 15,
+              "predicted": 21,
+              "count": 17
+            },
+            {
+              "actual": 11,
+              "predicted": 20,
+              "count": 14
+            }
+          ]
+        },
+        "f100-both-n0-conditional": {
+          "known_accuracy": 0.5277777777777778,
+          "known_accepted_wrong": 443,
+          "known_predictions": 1008,
+          "unknown_accepted": 280,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 5,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 11,
+              "recall": 0.22916666666666666,
+              "predictions": 48
+            },
+            {
+              "action": 19,
+              "recall": 0.2916666666666667,
+              "predictions": 48
+            },
+            {
+              "action": 17,
+              "recall": 0.3125,
+              "predictions": 48
+            },
+            {
+              "action": 15,
+              "recall": 0.4166666666666667,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 13,
+              "predicted": 14,
+              "count": 18
+            },
+            {
+              "actual": 17,
+              "predicted": 14,
+              "count": 15
+            },
+            {
+              "actual": 5,
+              "predicted": 20,
+              "count": 13
+            },
+            {
+              "actual": 6,
+              "predicted": 4,
+              "count": 13
+            },
+            {
+              "actual": 19,
+              "predicted": 20,
+              "count": 13
+            }
+          ]
+        },
+        "f100-video-n0-conditional": {
+          "known_accuracy": 0.30456349206349204,
+          "known_accepted_wrong": 689,
+          "known_predictions": 1008,
+          "unknown_accepted": 282,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 3,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 5,
+              "recall": 0.0,
+              "predictions": 48
+            },
+            {
+              "action": 11,
+              "recall": 0.020833333333333332,
+              "predictions": 48
+            },
+            {
+              "action": 6,
+              "recall": 0.08333333333333333,
+              "predictions": 48
+            },
+            {
+              "action": 19,
+              "recall": 0.10416666666666667,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 13,
+              "predicted": 14,
+              "count": 24
+            },
+            {
+              "actual": 10,
+              "predicted": 9,
+              "count": 14
+            },
+            {
+              "actual": 15,
+              "predicted": 14,
+              "count": 14
+            },
+            {
+              "actual": 17,
+              "predicted": 14,
+              "count": 14
+            },
+            {
+              "actual": 19,
+              "predicted": 20,
+              "count": 14
+            }
+          ]
+        },
+        "f100-imu-n0-conditional": {
+          "known_accuracy": 0.6319444444444444,
+          "known_accepted_wrong": 335,
+          "known_predictions": 1008,
+          "unknown_accepted": 261,
+          "unknown_predictions": 282,
+          "lowest_recall_classes": [
+            {
+              "action": 17,
+              "recall": 0.1875,
+              "predictions": 48
+            },
+            {
+              "action": 7,
+              "recall": 0.2708333333333333,
+              "predictions": 48
+            },
+            {
+              "action": 15,
+              "recall": 0.2708333333333333,
+              "predictions": 48
+            },
+            {
+              "action": 8,
+              "recall": 0.2916666666666667,
+              "predictions": 48
+            },
+            {
+              "action": 19,
+              "recall": 0.3333333333333333,
+              "predictions": 48
+            }
+          ],
+          "largest_confusions": [
+            {
+              "actual": 15,
+              "predicted": 12,
+              "count": 25
+            },
+            {
+              "actual": 8,
+              "predicted": 11,
+              "count": 18
+            },
+            {
+              "actual": 20,
+              "predicted": 18,
+              "count": 18
+            },
+            {
+              "actual": 7,
+              "predicted": 20,
+              "count": 17
+            },
+            {
+              "actual": 17,
+              "predicted": 5,
+              "count": 16
+            }
+          ]
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "analyze_failures.py": "41ece7941fe72ccaf59b08bea033f5713c39d6cb1807b4340f20b3ed18d117e2"
+  }
+}

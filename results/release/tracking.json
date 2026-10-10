@@ -1,0 +1,136 @@
+{
+  "checked_at_utc": "2026-10-10T01:21:28.423397+00:00",
+  "run_count": 18,
+  "scope": "Local SQLite import, exact stored metrics and summary artifact hashes, idempotent repeated imports; no retraining or backdated imports.",
+  "checks": [
+    {
+      "study": "attention",
+      "run": "concatenation-42",
+      "metrics_checked": 6,
+      "source_sha256": "a696329737bf8284aee349308476e795e6d1e293498bde011cb6152d7bf9c6bb",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "attention",
+      "run": "concatenation-43",
+      "metrics_checked": 6,
+      "source_sha256": "a696329737bf8284aee349308476e795e6d1e293498bde011cb6152d7bf9c6bb",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "attention",
+      "run": "concatenation-44",
+      "metrics_checked": 6,
+      "source_sha256": "a696329737bf8284aee349308476e795e6d1e293498bde011cb6152d7bf9c6bb",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "attention",
+      "run": "attention-42",
+      "metrics_checked": 6,
+      "source_sha256": "a696329737bf8284aee349308476e795e6d1e293498bde011cb6152d7bf9c6bb",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "attention",
+      "run": "attention-43",
+      "metrics_checked": 6,
+      "source_sha256": "a696329737bf8284aee349308476e795e6d1e293498bde011cb6152d7bf9c6bb",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "attention",
+      "run": "attention-44",
+      "metrics_checked": 6,
+      "source_sha256": "a696329737bf8284aee349308476e795e6d1e293498bde011cb6152d7bf9c6bb",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "attention",
+      "run": "contrastive_attention-42",
+      "metrics_checked": 6,
+      "source_sha256": "a696329737bf8284aee349308476e795e6d1e293498bde011cb6152d7bf9c6bb",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "attention",
+      "run": "contrastive_attention-43",
+      "metrics_checked": 6,
+      "source_sha256": "a696329737bf8284aee349308476e795e6d1e293498bde011cb6152d7bf9c6bb",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "attention",
+      "run": "contrastive_attention-44",
+      "metrics_checked": 6,
+      "source_sha256": "a696329737bf8284aee349308476e795e6d1e293498bde011cb6152d7bf9c6bb",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "robustness",
+      "run": "full_only-42",
+      "metrics_checked": 749,
+      "source_sha256": "de16954ff7e1e2404e978a6b1d5498c13c5279280bfb9a425bacfd18a4e97a95",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "robustness",
+      "run": "full_only-43",
+      "metrics_checked": 749,
+      "source_sha256": "de16954ff7e1e2404e978a6b1d5498c13c5279280bfb9a425bacfd18a4e97a95",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "robustness",
+      "run": "full_only-44",
+      "metrics_checked": 749,
+      "source_sha256": "de16954ff7e1e2404e978a6b1d5498c13c5279280bfb9a425bacfd18a4e97a95",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "robustness",
+      "run": "augmented-42",
+      "metrics_checked": 749,
+      "source_sha256": "de16954ff7e1e2404e978a6b1d5498c13c5279280bfb9a425bacfd18a4e97a95",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "robustness",
+      "run": "augmented-43",
+      "metrics_checked": 749,
+      "source_sha256": "de16954ff7e1e2404e978a6b1d5498c13c5279280bfb9a425bacfd18a4e97a95",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "robustness",
+      "run": "augmented-44",
+      "metrics_checked": 749,
+      "source_sha256": "de16954ff7e1e2404e978a6b1d5498c13c5279280bfb9a425bacfd18a4e97a95",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "transfer",
+      "run": "transfer-42",
+      "metrics_checked": 1561,
+      "source_sha256": "84596d04ad98d417c277b67d6728c37ca8699572bd78677d3a6eac6754f06e88",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "transfer",
+      "run": "transfer-43",
+      "metrics_checked": 1561,
+      "source_sha256": "84596d04ad98d417c277b67d6728c37ca8699572bd78677d3a6eac6754f06e88",
+      "repeat_import_reused_run": true
+    },
+    {
+      "study": "transfer",
+      "run": "transfer-44",
+      "metrics_checked": 1561,
+      "source_sha256": "84596d04ad98d417c277b67d6728c37ca8699572bd78677d3a6eac6754f06e88",
+      "repeat_import_reused_run": true
+    }
+  ],
+  "source_sha256": {
+    "track_results.py": "db230ca095ca977527a2fbf88ba6c7d5995949ba83e3ba7952f43c900d9aa63b"
+  }
+}

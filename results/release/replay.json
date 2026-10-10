@@ -1,0 +1,877 @@
+{
+  "checked_at_utc": "2026-10-10T01:20:30.367501+00:00",
+  "seconds": 55.075972399999955,
+  "checks": [
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "both",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "imu",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "both",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "imu",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "both",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "imu",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "both",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "imu",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "both",
+      "top_action": 4,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "video",
+      "top_action": 18,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "imu",
+      "top_action": 10,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "both",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "video",
+      "top_action": 18,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "imu",
+      "top_action": 3,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "both",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "video",
+      "top_action": 1,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "imu",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "both",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "video",
+      "top_action": 4,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a1_s2_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "imu",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "both",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "imu",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "both",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "imu",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "both",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "imu",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "both",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "imu",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "both",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "video",
+      "top_action": 8,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "imu",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "both",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "video",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "imu",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "both",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "video",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "imu",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "both",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "video",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a2_s4_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "imu",
+      "top_action": 2,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "imu",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "imu",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "both",
+      "top_action": 12,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "imu",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "imu",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "video",
+      "top_action": 18,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "imu",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "video",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "imu",
+      "top_action": 14,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "video",
+      "top_action": 18,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "imu",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "both",
+      "top_action": 18,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "video",
+      "top_action": 18,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a22_s2_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "imu",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 0.25,
+      "modality": "imu",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "both",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 0.5,
+      "modality": "imu",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "both",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 0.75,
+      "modality": "imu",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "both",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "video",
+      "top_action": 6,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "robust",
+      "fraction": 1.0,
+      "modality": "imu",
+      "top_action": 1,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "video",
+      "top_action": 20,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 0.25,
+      "modality": "imu",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "video",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 0.5,
+      "modality": "imu",
+      "top_action": 14,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "video",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 0.75,
+      "modality": "imu",
+      "top_action": 14,
+      "accepted": false,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "both",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "video",
+      "top_action": 14,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    },
+    {
+      "trial": "a27_s8_t1",
+      "model": "transfer",
+      "fraction": 1.0,
+      "modality": "imu",
+      "top_action": 21,
+      "accepted": true,
+      "max_probability_difference": 0.0
+    }
+  ],
+  "scope": "Four fixed trials,4 fractions,3 modalities,2 models; real HTTP versus direct checked runtime. Demo samples are not evaluation estimates.",
+  "replay_index_sha256": "92c566aca691324c5e71ca0458d5e3bf1bd2c55e693055bfb1ec6af0eb5a211a",
+  "source_sha256": {
+    "replay_data.py": "28c1665a7af3c4a006d06dc58d93b6e5882324986b856e1cccfc3f534a270d5d",
+    "replay_server.py": "abe2bad212d28db0e1403c27e46352172adc6de289b2fbed0ed0bba27f0c808d",
+    "verify_replay.py": "031ae57b4a77bb9666d8209b74a79bdb10736cfba5c675776734d4748203ca26"
+  }
+}
