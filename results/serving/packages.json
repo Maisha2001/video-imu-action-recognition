@@ -1,0 +1,287 @@
+{
+  "robust": {
+    "format_version": 1,
+    "family": "robust",
+    "labels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "seed": 42,
+    "calibration": {
+      "temperature": 1.42112489919689,
+      "threshold": 0.054293583970355386,
+      "observations": 1008,
+      "target_known_acceptance": 0.95,
+      "calibration_nll_before": 1.7959994782398163,
+      "calibration_nll_after": 1.7430613113326017,
+      "unique_trials": 84
+    },
+    "source_model_sha256": "242f5ba0398a5b54428e9bd1d68872c8c5f5af20cca1cdb1e30dd3bb2213419e",
+    "files": {
+      "model.onnx": "1bbf3a57483af7055d30118f041779c59e8c11071a7c12e326cdcf0d485371bd",
+      "source.pt": "242f5ba0398a5b54428e9bd1d68872c8c5f5af20cca1cdb1e30dd3bb2213419e"
+    },
+    "inputs": {
+      "video": [
+        1,
+        3,
+        16,
+        96,
+        96
+      ],
+      "imu": [
+        1,
+        6,
+        128
+      ],
+      "available": [
+        1,
+        2
+      ]
+    },
+    "feature_spec": null,
+    "created_at_utc": "2026-10-10T00:00:55.381556+00:00",
+    "export": {
+      "torch": "2.11.0+cu128",
+      "onnx": "1.23.2",
+      "onnxruntime": "1.31.0",
+      "opset": 18,
+      "batch_size": 1,
+      "smoke_max_logit_difference": {
+        "classifier": 4.291534423828125e-06
+      }
+    },
+    "limitations": [
+      "Offline segmented recordings; fraction alignment is not exact timestamp synchronization.",
+      "Confidence thresholds do not reliably identify unfamiliar actions.",
+      "Experimental models; no safety-critical or real-time performance claim."
+    ]
+  },
+  "transfer": {
+    "format_version": 1,
+    "family": "transfer",
+    "labels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "seed": 42,
+    "calibration": {
+      "pooled": {
+        "temperature": 1.754191006975045,
+        "threshold": 0.18960555121279205,
+        "observations": 1008,
+        "target_known_acceptance": 0.95,
+        "calibration_nll_before": 2.1575195253518182,
+        "calibration_nll_after": 1.8651441770981319
+      },
+      "conditional": {
+        "f100-both-n0": {
+          "temperature": 1.6442337191993759,
+          "threshold": 0.24092035055962324,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 1.8627689371780856,
+          "calibration_nll_after": 1.6461164098879988
+        },
+        "f100-imu-n0": {
+          "temperature": 1.3518742992423427,
+          "threshold": 0.3154411040908778,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 1.3165770691086547,
+          "calibration_nll_after": 1.2402696114580078
+        },
+        "f100-video-n0": {
+          "temperature": 2.066454346842469,
+          "threshold": 0.13364963027780002,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 2.927928532106847,
+          "calibration_nll_after": 2.483346257470772
+        },
+        "f25-both-n0": {
+          "temperature": 2.1494784818581976,
+          "threshold": 0.17668303106670902,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 2.7021769833364013,
+          "calibration_nll_after": 2.1727221320765624
+        },
+        "f25-imu-n0": {
+          "temperature": 1.6240714898455435,
+          "threshold": 0.2221771567903235,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 1.8963318403450429,
+          "calibration_nll_after": 1.7151798252975312
+        },
+        "f25-video-n0": {
+          "temperature": 4.375583047410984,
+          "threshold": 0.08882796064653971,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 4.195707309001466,
+          "calibration_nll_after": 2.917916400011822
+        },
+        "f50-both-n0": {
+          "temperature": 1.6512165029983499,
+          "threshold": 0.24964591106546669,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 1.7201152026773872,
+          "calibration_nll_after": 1.499479202634254
+        },
+        "f50-imu-n0": {
+          "temperature": 1.292290174844878,
+          "threshold": 0.36463082482277615,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 1.1245088129786691,
+          "calibration_nll_after": 1.0766865103808587
+        },
+        "f50-video-n0": {
+          "temperature": 2.1897016115614245,
+          "threshold": 0.13516859532590206,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 3.048119486020905,
+          "calibration_nll_after": 2.4678531254020686
+        },
+        "f75-both-n0": {
+          "temperature": 1.5610570537921333,
+          "threshold": 0.27372803065553664,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 1.5015697244746744,
+          "calibration_nll_after": 1.3367306311453957
+        },
+        "f75-imu-n0": {
+          "temperature": 1.1983772393478767,
+          "threshold": 0.40334099512010013,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 1.031319985785053,
+          "calibration_nll_after": 1.0072913136472894
+        },
+        "f75-video-n0": {
+          "temperature": 1.8301625498279561,
+          "threshold": 0.17235147143276514,
+          "observations": 84,
+          "target_known_acceptance": 0.95,
+          "calibration_nll_before": 2.563110421208636,
+          "calibration_nll_after": 2.203888498648855
+        }
+      },
+      "unique_trials": 84
+    },
+    "source_model_sha256": "5865641f5e95572bda73e30d864590f7c995fa79748ebb985c7e22264ec5667c",
+    "files": {
+      "model.onnx": "13bb26f00c6c54a01543ce8b515ff3f15deada2ba25e7d012f824bb8ccdcce82",
+      "source.pt": "5865641f5e95572bda73e30d864590f7c995fa79748ebb985c7e22264ec5667c",
+      "backbone.onnx": "0277658053d4d5e7c4781419750563c3cfc92004442740f6357151b091be7dab"
+    },
+    "inputs": {
+      "video": [
+        1,
+        512
+      ],
+      "imu": [
+        1,
+        6,
+        128
+      ],
+      "available": [
+        1,
+        2
+      ]
+    },
+    "feature_spec": {
+      "backbone": "torchvision.r3d_18.KINETICS400_V1",
+      "torchvision": "0.26.0",
+      "weights_sha256": "b3b3357ead25631ec9c57362ff2128a92d0427e01e2cd184951a44380c3f2e9d",
+      "fractions": [
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "frames": 16,
+      "resize": [
+        128,
+        171
+      ],
+      "crop": [
+        112,
+        112
+      ],
+      "interpolation": "OpenCV INTER_LINEAR",
+      "mean": [
+        0.43216,
+        0.394666,
+        0.37645
+      ],
+      "std": [
+        0.22803,
+        0.22145,
+        0.216989
+      ],
+      "features": 512,
+      "mode": "frozen evaluation; float32; TF32 disabled"
+    },
+    "created_at_utc": "2026-10-10T00:01:03.153386+00:00",
+    "export": {
+      "torch": "2.11.0+cu128",
+      "onnx": "1.23.2",
+      "onnxruntime": "1.31.0",
+      "opset": 18,
+      "batch_size": 1,
+      "smoke_max_logit_difference": {
+        "classifier": 2.384185791015625e-06,
+        "backbone": 2.2649765014648438e-06
+      }
+    },
+    "limitations": [
+      "Offline segmented recordings; fraction alignment is not exact timestamp synchronization.",
+      "Confidence thresholds do not reliably identify unfamiliar actions.",
+      "Experimental models; no safety-critical or real-time performance claim."
+    ]
+  }
+}

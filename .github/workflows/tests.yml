@@ -23,9 +23,20 @@ jobs:
           python-version: '3.11'
           cache: pip
       - run: python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cpu
-      - run: python -m pip install -r requirements-transfer.txt
+      - run: python -m pip install -r requirements-serving.txt
+      - name: Build native runner
+        run: |
+          curl -fL https://github.com/microsoft/onnxruntime/releases/download/v1.31.0/onnxruntime-linux-x64-1.31.0.tgz -o /tmp/ort.tgz
+          echo "cc5c72baf5ae5c8238a6841f0897227be2d02826b9cf98eaf02fdefaeeb03a57  /tmp/ort.tgz" | sha256sum -c -
+          tar -xzf /tmp/ort.tgz -C /tmp
+          cmake -S native -B /tmp/activity-build -DCMAKE_BUILD_TYPE=Release -DONNXRUNTIME_ROOT=/tmp/onnxruntime-linux-x64-1.31.0
+          cmake --build /tmp/activity-build --parallel 2
       - run: python -m pytest -q
+        env:
+          ACTIVITY_NATIVE: /tmp/activity-build/activity_infer
       - run: python multimodal.py --help
       - run: python attention.py --help
       - run: python robustness.py --help
       - run: python transfer.py --help
+      - run: python inference_api.py --help
+      - run: python export_serving.py --help

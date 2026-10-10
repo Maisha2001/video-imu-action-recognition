@@ -1,0 +1,129 @@
+{
+  "measured_at_utc": "2026-10-10T00:10:53.881442+00:00",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "native_sha256": "7c716477e2d678e5fd5c319524c4bd829d4a2a27dcd493da9c0dd3564a30b9c4",
+  "models": {
+    "robust": {
+      "pytorch_cpu": {
+        "samples": 80,
+        "warmup": 5,
+        "repeats": 10,
+        "threads": 1,
+        "p50_ms": 5.058400000052643,
+        "p95_ms": 6.807499999922584,
+        "mean_ms": 5.415923750115326
+      },
+      "python_onnx_cpu": {
+        "samples": 80,
+        "warmup": 5,
+        "repeats": 10,
+        "threads": 1,
+        "p50_ms": 7.21979999980249,
+        "p95_ms": 9.662999998909072,
+        "mean_ms": 7.631087499953537
+      },
+      "cpp_onnx_cpu": {
+        "records": 8,
+        "output_values_per_record": 21,
+        "repeats": 10,
+        "warmup": 5,
+        "threads": 1,
+        "samples": 80,
+        "p50_ms": 7.2645,
+        "p95_ms": 8.793,
+        "mean_ms": 7.54514
+      }
+    },
+    "transfer": {
+      "pytorch_cpu": {
+        "samples": 80,
+        "warmup": 5,
+        "repeats": 10,
+        "threads": 1,
+        "p50_ms": 0.42020000000775326,
+        "p95_ms": 0.5308999989210861,
+        "mean_ms": 0.44277749991579185
+      },
+      "python_onnx_cpu": {
+        "samples": 80,
+        "warmup": 5,
+        "repeats": 10,
+        "threads": 1,
+        "p50_ms": 0.07539999933214858,
+        "p95_ms": 0.08789999992586672,
+        "mean_ms": 0.08378499985610688
+      },
+      "cpp_onnx_cpu": {
+        "records": 8,
+        "output_values_per_record": 21,
+        "repeats": 10,
+        "warmup": 5,
+        "threads": 1,
+        "samples": 80,
+        "p50_ms": 0.0715,
+        "p95_ms": 0.0912,
+        "mean_ms": 0.0759463
+      }
+    }
+  },
+  "trials": [
+    "a1_s2_t1",
+    "a1_s4_t1",
+    "a1_s6_t1",
+    "a1_s8_t1",
+    "a22_s2_t1",
+    "a22_s4_t1",
+    "a22_s6_t1",
+    "a22_s8_t1"
+  ],
+  "backbone": {
+    "pytorch_cpu": {
+      "samples": 24,
+      "warmup": 5,
+      "repeats": 3,
+      "threads": 1,
+      "p50_ms": 601.9850000011502,
+      "p95_ms": 624.1221999989648,
+      "mean_ms": 605.2513833334009
+    },
+    "python_onnx_cpu": {
+      "samples": 24,
+      "warmup": 5,
+      "repeats": 3,
+      "threads": 1,
+      "p50_ms": 698.0478999994375,
+      "p95_ms": 711.9539000013901,
+      "mean_ms": 698.901420833181
+    },
+    "cpp_onnx_cpu": {
+      "records": 8,
+      "output_values_per_record": 512,
+      "repeats": 3,
+      "warmup": 5,
+      "threads": 1,
+      "samples": 24,
+      "p50_ms": 695.36,
+      "p95_ms": 710.111,
+      "mean_ms": 696.84
+    }
+  },
+  "scope": "Sequential warmed CPU graph measurements, one thread, batch1. Classifiers:8 fixed full-paired trials,5 warmups,10 passes. Backbone:2 fixed trials at4 fractions,5 warmups,3 passes. Excludes load, decoding, HTTP and validation. C++ includes tensor-view setup. Other applications and OS load are uncontrolled; no statistical speedup or real-time guarantee.",
+  "source_sha256": {
+    "benchmark_serving.py": "c86ecec8f755cb5ff81fe49f7b627eed65dc3196bb4b7628e944885d6edea444",
+    "verify_serving.py": "1238f973751e81a0e65960d02f53c84b77fd42553e3425bb16929977fa01529b",
+    "serving_runtime.py": "7c9ef9ae6636eb70cea60ade40f8e5d334c13ad66e5feb4532302f9d975a201f",
+    "native/infer.cpp": "51f18bad9ede07b41db1bef80a068a09fe0d728a406e7dea38c823e47540b232"
+  },
+  "package_model_sha256": {
+    "robust": {
+      "model.onnx": "1bbf3a57483af7055d30118f041779c59e8c11071a7c12e326cdcf0d485371bd",
+      "source.pt": "242f5ba0398a5b54428e9bd1d68872c8c5f5af20cca1cdb1e30dd3bb2213419e"
+    },
+    "transfer": {
+      "model.onnx": "13bb26f00c6c54a01543ce8b515ff3f15deada2ba25e7d012f824bb8ccdcce82",
+      "source.pt": "5865641f5e95572bda73e30d864590f7c995fa79748ebb985c7e22264ec5667c",
+      "backbone.onnx": "0277658053d4d5e7c4781419750563c3cfc92004442740f6357151b091be7dab"
+    }
+  }
+}

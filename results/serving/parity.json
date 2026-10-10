@@ -1,0 +1,450 @@
+{
+  "checked_at_utc": "2026-10-10T00:05:23.551480+00:00",
+  "torch": "2.11.0+cu128",
+  "onnxruntime": "1.31.0",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "native_sha256": "7c716477e2d678e5fd5c319524c4bd829d4a2a27dcd493da9c0dd3564a30b9c4",
+  "archives": {
+    "inertial": "1900de05775c04626dee30b34638b79dd739d481786f0a788f2fbb00663abea4",
+    "rgb": "058dded078b2c21eff901d98fe0a86d5343d11e9d6c07081aaa3e3280a43052b"
+  },
+  "prefix_cache_sha256": {
+    "video.npy": "20daad639a50b12aa8dce9966caeafea8e0a43c8d815e9a4c3acf3c0bde4802a",
+    "imu.npy": "1ccf219ad1ae24381c100b9e7ffe458cd555d210c08977b23245fb37eb7cb4bd"
+  },
+  "feature_array_sha256": "4039ca72fdb945eea31164d11113cc0b06cd3a26bc3856a529de7a0d339dfcda",
+  "native_trials": [
+    "a1_s2_t1",
+    "a1_s4_t1",
+    "a1_s6_t1",
+    "a1_s8_t1",
+    "a22_s2_t1",
+    "a22_s4_t1",
+    "a22_s6_t1",
+    "a22_s8_t1"
+  ],
+  "models": {
+    "robust": {
+      "source_model_sha256": "242f5ba0398a5b54428e9bd1d68872c8c5f5af20cca1cdb1e30dd3bb2213419e",
+      "files": {
+        "model.onnx": "1bbf3a57483af7055d30118f041779c59e8c11071a7c12e326cdcf0d485371bd",
+        "source.pt": "242f5ba0398a5b54428e9bd1d68872c8c5f5af20cca1cdb1e30dd3bb2213419e"
+      },
+      "conditions": {
+        "f25-both-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 7.62939453125e-06,
+          "max_confidence_difference": 9.191575270905972e-07
+        },
+        "f25-video-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 3.5762786865234375e-07,
+          "max_confidence_difference": 1.1613617609262938e-08
+        },
+        "f25-imu-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 6.123920296419172e-07
+        },
+        "f25-both-n10": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 9.207050024606644e-07
+        },
+        "f25-both-n30": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 1.0515172002567574e-06
+        },
+        "f50-both-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 6.630410619989924e-07
+        },
+        "f50-video-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 2.980232238769531e-07,
+          "max_confidence_difference": 1.0942865974472582e-08
+        },
+        "f50-imu-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 6.388985949179471e-07
+        },
+        "f50-both-n10": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 6.129796524811937e-07
+        },
+        "f50-both-n30": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 6.382896129975002e-07
+        },
+        "f75-both-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 7.476689707353046e-07
+        },
+        "f75-video-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 3.5762786865234375e-07,
+          "max_confidence_difference": 1.0778082544515843e-08
+        },
+        "f75-imu-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 5.737086469226327e-07
+        },
+        "f75-both-n10": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 7.698612821682715e-07
+        },
+        "f75-both-n30": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 7.783682397510816e-07
+        },
+        "f100-both-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 7.62939453125e-06,
+          "max_confidence_difference": 8.414526633249153e-07
+        },
+        "f100-video-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 3.5762786865234375e-07,
+          "max_confidence_difference": 1.2202594122656674e-08
+        },
+        "f100-imu-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 5.147333827504319e-07
+        },
+        "f100-both-n10": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 7.62939453125e-06,
+          "max_confidence_difference": 7.957870413743962e-07
+        },
+        "f100-both-n30": {
+          "trials": 430,
+          "calibrated_comparisons": 430,
+          "matching_actions": 430,
+          "matching_acceptance": 430,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 7.509718631948381e-07
+        }
+      },
+      "native": {
+        "records": 160,
+        "matching_decisions": 160,
+        "max_logit_difference": 0.0
+      },
+      "latency": {
+        "pytorch_cpu": {
+          "samples": 80,
+          "warmup": 5,
+          "repeats": 10,
+          "threads": 1,
+          "p50_ms": 6.055699999706121,
+          "p95_ms": 8.157700000083423,
+          "mean_ms": 6.301693750174309
+        },
+        "python_onnx_cpu": {
+          "samples": 80,
+          "warmup": 5,
+          "repeats": 10,
+          "threads": 1,
+          "p50_ms": 10.963000000629108,
+          "p95_ms": 14.910300000337884,
+          "mean_ms": 11.171335000062754
+        },
+        "cpp_onnx_cpu": {
+          "records": 8,
+          "output_values_per_record": 21,
+          "repeats": 10,
+          "warmup": 5,
+          "threads": 1,
+          "samples": 80,
+          "p50_ms": 7.3052,
+          "p95_ms": 10.9383,
+          "mean_ms": 7.89638
+        }
+      }
+    },
+    "transfer": {
+      "source_model_sha256": "5865641f5e95572bda73e30d864590f7c995fa79748ebb985c7e22264ec5667c",
+      "files": {
+        "model.onnx": "13bb26f00c6c54a01543ce8b515ff3f15deada2ba25e7d012f824bb8ccdcce82",
+        "source.pt": "5865641f5e95572bda73e30d864590f7c995fa79748ebb985c7e22264ec5667c",
+        "backbone.onnx": "0277658053d4d5e7c4781419750563c3cfc92004442740f6357151b091be7dab"
+      },
+      "conditions": {
+        "f25-both-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 5.276980765689387e-07
+        },
+        "f25-video-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 4.291534423828125e-06,
+          "max_confidence_difference": 5.125210050804796e-07
+        },
+        "f25-imu-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 4.76837158203125e-06,
+          "max_confidence_difference": 5.426456142210156e-07
+        },
+        "f25-both-n10": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 4.76837158203125e-06,
+          "max_confidence_difference": 5.494771729841474e-07
+        },
+        "f25-both-n30": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 5.98037561361231e-07
+        },
+        "f50-both-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 4.76837158203125e-06,
+          "max_confidence_difference": 5.491035757199114e-07
+        },
+        "f50-video-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 4.645152626991944e-07
+        },
+        "f50-imu-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 4.76837158203125e-06,
+          "max_confidence_difference": 7.480193112696654e-07
+        },
+        "f50-both-n10": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 8.58306884765625e-06,
+          "max_confidence_difference": 4.833653357572132e-07
+        },
+        "f50-both-n30": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 7.021637596915653e-07
+        },
+        "f75-both-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 6.704533151991043e-07
+        },
+        "f75-video-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.245208740234375e-06,
+          "max_confidence_difference": 4.7091336408122686e-07
+        },
+        "f75-imu-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 7.167224714832443e-07
+        },
+        "f75-both-n10": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 6.799734443285743e-07
+        },
+        "f75-both-n30": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 6.67572021484375e-06,
+          "max_confidence_difference": 5.896257301296615e-07
+        },
+        "f100-both-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.245208740234375e-06,
+          "max_confidence_difference": 6.165585778039606e-07
+        },
+        "f100-video-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 4.291534423828125e-06,
+          "max_confidence_difference": 5.182990301388912e-07
+        },
+        "f100-imu-n0": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 6.694353760217098e-07
+        },
+        "f100-both-n10": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 7.807783136692947e-07
+        },
+        "f100-both-n30": {
+          "trials": 430,
+          "calibrated_comparisons": 860,
+          "matching_actions": 860,
+          "matching_acceptance": 860,
+          "max_logit_difference": 5.7220458984375e-06,
+          "max_confidence_difference": 4.5591992264837344e-07
+        }
+      },
+      "native": {
+        "records": 160,
+        "matching_decisions": 160,
+        "max_logit_difference": 0.0
+      },
+      "latency": {
+        "pytorch_cpu": {
+          "samples": 80,
+          "warmup": 5,
+          "repeats": 10,
+          "threads": 1,
+          "p50_ms": 0.5024000001867535,
+          "p95_ms": 0.6212000007508323,
+          "mean_ms": 0.5352600000605889
+        },
+        "python_onnx_cpu": {
+          "samples": 80,
+          "warmup": 5,
+          "repeats": 10,
+          "threads": 1,
+          "p50_ms": 0.14540000120177865,
+          "p95_ms": 0.16150000010384247,
+          "mean_ms": 0.14211750008144008
+        },
+        "cpp_onnx_cpu": {
+          "records": 8,
+          "output_values_per_record": 21,
+          "repeats": 10,
+          "warmup": 5,
+          "threads": 1,
+          "samples": 80,
+          "p50_ms": 0.0717,
+          "p95_ms": 0.0869,
+          "mean_ms": 0.0745425
+        }
+      }
+    }
+  },
+  "latency_scope": "One CPU thread, batch1, resident models and preprocessed inputs; eight fixed complete paired trials, five warmups, ten passes. Excludes model loading, file decoding, network, and frozen video backbone. Python bypasses input validation for graph timing; C++ includes tensor-view setup. No statistical speedup guarantee. These diagnostic timings may overlap other verification. Use latency.json for the separate sequential benchmark.",
+  "native_scope": "160 inputs per model: actions1/22, people2/4/6/8, repetition1, all20 conditions. Full PyTorch/ONNX classifier parity covers430 held-out trials and all20 conditions; cached video features used for transfer.",
+  "source_sha256": {
+    "export_serving.py": "6e3e2e0519047ca2a4962fa5c0a52d8d3f7196b0ecf7c537d9c209527bb49433",
+    "serving_runtime.py": "7c9ef9ae6636eb70cea60ade40f8e5d334c13ad66e5feb4532302f9d975a201f",
+    "inference_api.py": "c1deacf237eccf569cc891e982a7113ac9a37f9ca4776ff292003125316e304b",
+    "verify_serving.py": "1238f973751e81a0e65960d02f53c84b77fd42553e3425bb16929977fa01529b",
+    "native/infer.cpp": "51f18bad9ede07b41db1bef80a068a09fe0d728a406e7dea38c823e47540b232"
+  },
+  "seconds": 138.90964709999935
+}

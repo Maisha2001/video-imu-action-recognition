@@ -1,6 +1,6 @@
 [project]
 name = "video-imu-action-recognition"
-version = "0.5.0"
+version = "0.6.0"
 description = "Subject-held-out activity recognition from paired video and motion recordings"
 requires-python = ">=3.11"
 

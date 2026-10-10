@@ -7,6 +7,8 @@ contrastive pretraining. Both paths include subject-based evaluation, saved-mode
 prediction, and local results viewers. A separate open-set study adds early
 prefixes, missing-sensor handling, and confidence calibration. A frozen pretrained
 video backbone provides a stronger visual comparison with conditional calibration.
+Checked model exports, a local inference API, and a C++ runner support serving
+the robustness and transfer models. See [service setup](SERVING.md).
 
 ## Run
 
@@ -243,3 +245,24 @@ reproduced all 51,600 actions, decisions, and confidence scores exactly; CPU
 preserved every action and decision (maximum confidence difference 0.000000761).
 The [raw-file check](results/transfer/file-inference.json) covers one trial at
 two fractions with each sensor configuration on CPU and GPU.
+
+## Local inference service
+
+Export trained model packages and run the service using [SERVING.md](SERVING.md).
+It accepts paired AVI/MAT recordings or either sensor alone, returns calibrated
+predictions and model identity, and binds to localhost. Each model keeps its
+original weights, preprocessing, and calibration; the API exposes their limitations.
+
+The fixed-batch ONNX classifiers preserved all 25,800 calibrated decisions
+against PyTorch across 430 held-out trials and 20 conditions. The C++ runner
+matched Python ONNX logits exactly on 320 representative classifier inputs,
+and eight native video-backbone outputs matched exactly. Forty-eight actual
+HTTP requests reproduced original raw-file predictions. See
+[parity](results/serving/parity.json), [HTTP checks](results/serving/http.json),
+and [separate CPU timing measurements](results/serving/latency.json).
+
+The native path runs preprocessed tensors, with Python handling media decoding
+and calibration. The video backbone is much slower than the small transfer
+classifier, so classifier timings alone do not represent request latency.
+Unknown-action detection remains unreliable; serving does not improve model
+quality or establish real-time performance. A complete replay demo is not yet included.

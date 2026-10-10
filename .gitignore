@@ -10,4 +10,9 @@ runs/
 *.avi
 *.pt
 *.pth
+*.onnx
+*.exe
+*.dll
+*.bin
+build/
 *.npy
